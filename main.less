@@ -16,12 +16,21 @@ body {
         background: #b3b3b3;
         height: 50px;
     }
-    h1 {
+    h1, h2, h3, h4 {
         font-family: acumin-pro-extra-condensed, sans-serif;
+        letter-spacing: 1px;
+        color: @white;
     }
 
     img {
         width: 100%;
+    }
+
+    a {
+        color: @white;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
 }
@@ -35,4 +44,48 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .cta {
+        background: @dark-yellow;
+        padding: 1% 4%;
+        border-radius: 10px;
+        margin-top: 5%;
+    }
+}
+
+.mission {
+    background: @dark-blue;
+    color: @white;
+    text-align: center;
+    padding: 10% 5%;
+}
+
+.link {
+    display: flex;
+    flex-flow: row wrap;
+
+    .block {
+        color: @white;
+        width: 100%;
+        background: @white;
+        text-align: center;
+        position: relative;
+    }
+    .txt {
+        font-size: 1.9rem;
+        position: absolute;
+        z-index: 9999;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin-top: -9px;
+
+
+    }
+    
+    
 }

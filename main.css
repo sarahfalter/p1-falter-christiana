@@ -13,11 +13,22 @@ body header {
   background: #b3b3b3;
   height: 50px;
 }
-body h1 {
+body h1,
+body h2,
+body h3,
+body h4 {
   font-family: acumin-pro-extra-condensed, sans-serif;
+  letter-spacing: 1px;
+  color: #ffffff;
 }
 body img {
   width: 100%;
+}
+body a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .hero-home {
   background-image: url(images/home-bg.jpg);
@@ -28,4 +39,40 @@ body img {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+}
+.hero-home h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.hero-home .cta {
+  background: #E9B168;
+  padding: 1% 4%;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+.mission {
+  background: #05485A;
+  color: #ffffff;
+  text-align: center;
+  padding: 10% 5%;
+}
+.link {
+  display: flex;
+  flex-flow: row wrap;
+}
+.link .block {
+  color: #ffffff;
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+  position: relative;
+}
+.link .txt {
+  font-size: 1.9rem;
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -9px;
 }
