@@ -6,27 +6,31 @@
     box-sizing: border-box;
 }
 
-body {
+img, iframe {
+    width: 100%;
+}
+
+/************************ START HOME STYLING ************************/
+
+.body-home {
     color: @dark-blue;   
     font-family: lato, sans-serif;
     min-height: 100vh;
     width: 100%;
     
-    header {
+    .header-home {
         background: #b3b3b3;
         height: 50px;
     }
+
     h1, h2, h3, h4 {
         font-family: acumin-pro-extra-condensed, sans-serif;
         letter-spacing: 1px;
         color: @white;
     }
 
-    img {
-        width: 100%;
-    }
-
-    a {
+    
+    .cta {
         color: @white;
         text-decoration: none;
         text-transform: uppercase;
@@ -86,6 +90,147 @@ body {
 
 
     }
-    
-    
 }
+
+
+/************************ START ABOUT STYLING ************************/
+
+.logo {
+    max-width: 200px;
+}
+
+.logo-center {
+    text-align: center;
+}
+
+.hero-about {
+    background-image: url(images/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+    border-bottom: 2px solid @dark-blue;
+
+    .about-border {
+        padding-top: 14%;
+        padding-left: 12%;
+    }
+
+    h1 {
+        color: @dark-blue;
+        font-family: @font-family-acumin-pro-condensed;
+        border-left: solid 5px @peach;
+        padding-left: 3%;
+    }
+}
+
+.about-content {
+    padding: 5%;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 3%; 
+        font-family: @font-family-acumin-pro-condensed;
+        color: @dark-blue;
+    }
+
+    h3 {
+        padding-bottom: 3%;
+        text-align: center;
+        font-family: @font-family-acumin-pro-condensed;
+        color: @dark-blue;
+    }
+
+    p {
+        padding-bottom: 3%;
+        font-family: @font-family-lato;
+        color: @dark-blue;
+    }
+}
+
+
+.footer-color-block {
+    background-color: @dark-blue;
+    padding: 5%;
+    color: @white;
+
+    h3 {
+        font-family: @font-family-acumin-pro-condensed;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+
+    ul {
+        font-family: @font-family-lato; 
+        text-align: center;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+.footer-content {
+    padding: 5%;
+
+    ul, p {
+        font-family: @font-family-lato; 
+        text-align: center;
+        color: @dark-blue;
+
+        li {
+            list-style: none;
+            padding-bottom: 1%;
+        }
+    }
+
+    .footer-icons {
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 3%;
+        font-size: 35px;
+    }
+
+    a {
+        color: @dark-blue;
+        text-decoration: none;
+        padding-right: 1%;
+    }
+}
+
+
+
+/********************* START 650PX MEDIA QUERY **************************/
+@media (min-width: 650px ) {
+    .about-border {
+        padding-top: 8%;
+    }
+}
+
+
+/********************* START 750PX MEDIA QUERY **************************/
+@media (min-width: 700px) {
+	.flex1, .flex2 {
+        display: flex;
+    }
+
+    .image-flex {
+        width: 50%;
+    }
+
+    .flex2 {
+        flex-direction: row-reverse;
+    }
+}
+
+
+// @media (min-width: 1000px ) {
+//     .flex1 {
+//         align-content: center;
+//     }
+// }
+
+// @media (min-width: 1200px) {
+// 	.image-flex{
+//         width: 600px
+//     }
+// }

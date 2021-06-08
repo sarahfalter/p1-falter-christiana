@@ -8,17 +8,26 @@
     <title>3 Daughters Brewing</title>
     <meta name="description" content="">
 
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" href="main.css" />
+
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/mwg6wqu.css">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/70a4005e9d.js" crossorigin="anonymous"></script>
 
+    <!--[if lt IE 9]>
+			<script src="js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
 
 </head>
 
-<body>
+<body class="body-about">
 
-    <img src="images/logo.png" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="200" />
+    <div class="logo-center">
+        <img class="logo" src="images/logo.png" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" />
+    </div>
+
 
     <nav>
         <ul>
@@ -31,38 +40,43 @@
 
     <main>
 
-        <h1>OUR STORY</h1>
+        <div class="hero-about">
+            <div class="about-border">
+                <h1>OUR <br> STORY</h1>
+            </div>
+        </div>
 
-        <section>
-            <img src="images/about1.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="500" />
-            <h2>Our Beers. Our Passion. Our Story.</h2>
-            <h3>How many beers does it take to put three daughters through college?</h3>
-            <p>Our story starts with Mike and Head Brewer, Ty Weaver in a local restaurant in St Petersburg, Florida. They were working on a recipe for a craft beer battered fish and decided to make it with their own hand crafted brews. To them, it was a
-                lot like cooking - you follow a recipe, adjust to taste, and then hope everyone likes the final product. Mike and Ty decided it was pretty good, so they put some on tap. To their surprise, it wasn't just pretty good. It outsold every other
-                beer they had.</p>
-            <p>They started brewing more and as the popularity of the beers grew, Mike and Ty decided to try to find a small but more advanced brewing system that would fit in the restaurant. Instead, they came home with an industrial-sized, 30-barrel brewhouse
-                that took up more space than the entire dining room itself. Exasperated, Mike's wife looked at him and asked the all important question: "How many beers do we have to sell to put to our three daughters through college?"</p>
-            <p>And so, 3 Daughters Brewing was born, officially opening its doors in St. Petersburg in December of 2013, eventually growing to become what is now one of the largest independent breweries in the state of Florida.</p>
+
+        <section class="flex1">
+            <img id="responsive" class="image-flex" src="images/about5.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="500" />
+            <div class="about-content">
+                <h2 class="center">Our Beers. Our Passion. Our Story.</h2>
+                <h3 class="center">How many beers does it take to put three daughters through college?</h3>
+                <p class="about-paragraph center">Our story starts with Mike and Head Brewer, Ty Weaver in a local restaurant in St Petersburg, Florida. They were working on a recipe for a craft beer battered fish and decided to make it with their own hand crafted brews. To them, it was
+                    a lot like cooking - you follow a recipe, adjust to taste, and then hope everyone likes the final product. Mike and Ty decided it was pretty good, so they put some on tap. To their surprise, it wasn't just pretty good. It outsold every
+                    other beer they had.</p>
+                <p class="about-paragraph center">They started brewing more and as the popularity of the beers grew, Mike and Ty decided to try to find a small but more advanced brewing system that would fit in the restaurant. Instead, they came home with an industrial-sized, 30-barrel
+                    brewhouse that took up more space than the entire dining room itself. Exasperated, Mike's wife looked at him and asked the all important question: "How many beers do we have to sell to put to our three daughters through college?"</p>
+                <p class="center">And so, 3 Daughters Brewing was born, officially opening its doors in St. Petersburg in December of 2013, eventually growing to become what is now one of the largest independent breweries in the state of Florida.</p>
+            </div>
         </section>
 
-        <section>
-            <h2>Family. Beer. Community.</h2>
-            <p>At 3 Daughters Brewing, we care about three things above all else: crafting great beer, sharing that beer with our friends, and supporting our community. Whether you're having a pint in our Tasting Room, buying a six pack from the store, or
-                trying us out on tap anywhere across Florida, you're a part of keeping that mission alive.</p>
-            <p>We were founded by a group of friends and family who had known each other for decades, and all these years later, it's the same crew keeping one of Florida's largest independent and family-owned breweries moving along. Come by our Tasting
-                Room any time in St. Petersburg, or find us in stores, restaurants and bars throughout Florida and beyond. Wherever you are, we toast to you.</p>
-            <img src="images/about4.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="500" />
+        <section class="flex2">
+            <img id="responsive2" class="image-flex" src="images/about6.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="500" />
+            <div class="about-content">
+                <h2>Family. Beer. Community.</h2>
+                <p class="about-paragraph">At 3 Daughters Brewing, we care about three things above all else: crafting great beer, sharing that beer with our friends, and supporting our community. Whether you're having a pint in our Tasting Room, buying a six pack from the store,
+                    or trying us out on tap anywhere across Florida, you're a part of keeping that mission alive.</p>
+                <p>We were founded by a group of friends and family who had known each other for decades, and all these years later, it's the same crew keeping one of Florida's largest independent and family-owned breweries moving along. Come by our Tasting
+                    Room any time in St. Petersburg, or find us in stores, restaurants and bars throughout Florida and beyond. Wherever you are, we toast to you.</p>
+            </div>
         </section>
-
-
-        <div></div>
-
     </main>
 
     <footer>
 
-        <div>
-            <h3>Hours</h3>
+        <div class="footer-color-block">
+            <h3>HOURS</h3>
             <ul>
                 <li>Monday - Thursday 11:30AM - 10:00PM</li>
                 <li>Friday - Saturday 11:30AM - 12:00AM</li>
@@ -73,25 +87,28 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14121.28775866159!2d-82.6627778!3d27.7690528!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d9834cf3055fece!2s3%20Daughters%20Brewing!5e0!3m2!1sen!2sus!4v1623001621032!5m2!1sen!2sus" width="600"
             height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-        <ul>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="brews.html">BREWS</a></li>
-            <li><a href="events.html">EVENTS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
 
-        <div>
-            <a href="https://www.facebook.com/3DaughtersBrewing" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/3daughtersbrewing/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/3DBrewing" target="_blank"><i class="fab fa-twitter"></i></a>
+        <div class="footer-content">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="brews.html">BREWS</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/3DaughtersBrewing" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/3daughtersbrewing/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/3DBrewing" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <div>
+                <p>Designed by GG Creative Co.</p>
+                <p>All Rights Reserved by Three Daughters Brewing</p>
+                <p>Copyright 2021</p>
+            </div>
+
         </div>
-
-        <div>
-            <p>Designed by GG Creative Co.</p>
-            <p>All Rights Reserved by Three Daughters Brewing</p>
-            <p>Copyright 2021</p>
-        </div>
-
 
     </footer>
 
