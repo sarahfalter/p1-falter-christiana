@@ -101,12 +101,31 @@ img, iframe {
 
 /************************ START ABOUT STYLING ************************/
 
+// nav {
+//     position: relative;
+// }
+
+.body-about {
+    position: relative;
+}
+
+.navbar-custom {
+    background-color: @dark-blue !important;
+    margin-top: -5%;
+}
+
 .logo {
     max-width: 200px;
 }
 
 .logo-center {
     text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 .hero-about {
@@ -235,6 +254,14 @@ img, iframe {
 }
 
 
+/********************* START 750PX MEDIA QUERY **************************/
+@media (min-width: 750px ){
+    .navbar-custom {
+        margin-top: -3%;
+    } 
+}
+
+
 /********************* START 850PX MEDIA QUERY **************************/
 @media (min-width: 850px) {
     .hero-about .about-border {
@@ -275,7 +302,7 @@ img, iframe {
 
 
 /********************* START 1000PX MEDIA QUERY **************************/
-@media (min-width: 1000px ) {
+@media (min-width: 1000px) {
     .hero-about .about-border {
         padding-top: 6%;
     }
@@ -291,6 +318,10 @@ img, iframe {
 
 
 @media (min-width: 1200px ) {
+    .navbar-custom {
+        margin-top: -2%;
+    } 
+
     .hero-about .about-border {
          min-height: 60vh;
     }
