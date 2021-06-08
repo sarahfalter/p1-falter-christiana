@@ -172,7 +172,7 @@ iframe {
   }
 }
 /********************* START 750PX MEDIA QUERY **************************/
-@media (min-width: 700px) {
+@media (min-width: 850px) {
   .flex1,
   .flex2 {
     display: flex;
@@ -184,3 +184,4 @@ iframe {
     flex-direction: row-reverse;
   }
 }
+/********************* START 1200PX MEDIA QUERY **************************/
