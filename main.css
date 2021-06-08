@@ -90,12 +90,12 @@ iframe {
   background-image: url(images/bg-1.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 30vh;
   border-bottom: 2px solid #05485A;
 }
 .hero-about .about-border {
   padding-top: 14%;
   padding-left: 12%;
+  min-height: 30vh;
 }
 .hero-about h1 {
   color: #05485A;
@@ -133,12 +133,19 @@ iframe {
   text-align: center;
   padding-bottom: 2%;
 }
-.footer-color-block ul {
+.footer-color-block ul,
+.footer-color-block p {
   font-family: 'lato', sans-serif;
   text-align: center;
 }
 .footer-color-block li {
   list-style: none;
+}
+.footer-color-block p span {
+  font-weight: bold;
+}
+.footer-color-block .footer-padding {
+  padding-top: 8%;
 }
 .footer-content {
   padding: 5%;
@@ -167,12 +174,26 @@ iframe {
 }
 /********************* START 650PX MEDIA QUERY **************************/
 @media (min-width: 650px) {
-  .about-border {
+  .hero-about .about-border {
     padding-top: 8%;
   }
+  .hero-about .about-border h1 {
+    padding-left: 2%;
+  }
+  .footer-color-block .footer-padding {
+    padding-top: 6%;
+  }
 }
-/********************* START 750PX MEDIA QUERY **************************/
+/********************* START 850PX MEDIA QUERY **************************/
 @media (min-width: 850px) {
+  .hero-about .about-border {
+    min-height: 50vh;
+  }
+  .hero-about .about-border h1 {
+    padding-left: 1%;
+    font-size: 50px;
+    border-left: solid 8px #D7745B;
+  }
   .flex1,
   .flex2 {
     display: flex;
@@ -183,5 +204,33 @@ iframe {
   .flex2 {
     flex-direction: row-reverse;
   }
+  .footer-color-block h3 {
+    padding-bottom: 1%;
+  }
+  .footer-color-block .footer-padding {
+    padding-top: 4%;
+  }
+}
+/********************* START 1000PX MEDIA QUERY **************************/
+@media (min-width: 1000px) {
+  .hero-about .about-border {
+    padding-top: 6%;
+  }
 }
 /********************* START 1200PX MEDIA QUERY **************************/
+@media (min-width: 1200px) {
+  .hero-about .about-border {
+    min-height: 60vh;
+  }
+  .flex1,
+  .flex2 {
+    align-items: center;
+  }
+}
+/********************* START 1400PX MEDIA QUERY **************************/
+/********************* START 2000PX MEDIA QUERY **************************/
+@media (min-width: 1500px) {
+  .hero-about .about-border {
+    min-height: 70vh;
+  }
+}

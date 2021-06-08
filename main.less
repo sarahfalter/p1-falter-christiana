@@ -107,12 +107,12 @@ img, iframe {
     background-image: url(images/bg-1.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 30vh;
     border-bottom: 2px solid @dark-blue;
 
     .about-border {
         padding-top: 14%;
         padding-left: 12%;
+        min-height: 30vh;
     }
 
     h1 {
@@ -159,13 +159,21 @@ img, iframe {
         padding-bottom: 2%;
     }
 
-    ul {
+    ul, p {
         font-family: @font-family-lato; 
         text-align: center;
     }
 
     li {
         list-style: none;
+    }
+
+    p span {
+        font-weight: bold;
+    }
+
+    .footer-padding {
+        padding-top: 8%;
     }
 }
 
@@ -201,14 +209,32 @@ img, iframe {
 
 /********************* START 650PX MEDIA QUERY **************************/
 @media (min-width: 650px ) {
-    .about-border {
+    .hero-about .about-border {
         padding-top: 8%;
+
+        h1 {
+            padding-left: 2%;
+        }
+    }
+
+    .footer-color-block .footer-padding {
+        padding-top: 6%;
     }
 }
 
 
-/********************* START 750PX MEDIA QUERY **************************/
+/********************* START 850PX MEDIA QUERY **************************/
 @media (min-width: 850px) {
+    .hero-about .about-border {
+        min-height: 50vh;
+    
+        h1 {
+        padding-left: 1%;
+        font-size: 50px;
+        border-left: solid 8px @peach;
+        }
+    }
+
 	.flex1, .flex2 {
         display: flex;
     }
@@ -219,6 +245,26 @@ img, iframe {
 
     .flex2 {
         flex-direction: row-reverse;
+    }
+
+    .footer-color-block {
+
+        h3 {
+            padding-bottom: 1%;
+        }
+
+        .footer-padding {
+            padding-top: 4%;
+    
+        }
+    }
+}
+
+
+/********************* START 1000PX MEDIA QUERY **************************/
+@media (min-width: 1000px ) {
+    .hero-about .about-border {
+        padding-top: 6%;
     }
 }
 
@@ -231,14 +277,35 @@ img, iframe {
 // }
 
 
-// @media (min-width: 1000px ) {
-//     .flex1 {
-//         align-content: center;
-//     }
-// }
+@media (min-width: 1200px ) {
+    .hero-about .about-border {
+         min-height: 60vh;
+    }
+    
+    .flex1, .flex2 {
+        align-items: center;
+    }
+}
 
 // @media (min-width: 1200px) {
 // 	.image-flex{
 //         width: 600px
 //     }
 // }
+
+
+
+/********************* START 1400PX MEDIA QUERY **************************/
+// @media (min-width: 1400px ) {
+//     .about-content {
+//         padding-top: 16%;
+//     }
+// }
+
+/********************* START 2000PX MEDIA QUERY **************************/
+
+@media (min-width: 1500px ) {
+    .hero-about .about-border {
+         min-height: 70vh;
+    }
+}
