@@ -24,10 +24,11 @@ iframe {
 .body-home h3,
 .body-home h4 {
   font-family: acumin-pro-extra-condensed, sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: #ffffff;
 }
-.body-home .cta {
+.body-home .cta,
+.body-home .txt {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -37,7 +38,7 @@ iframe {
   background-image: url(images/home-bg.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 70vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +52,7 @@ iframe {
   background: #E9B168;
   padding: 1% 4%;
   border-radius: 10px;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 .mission {
   background: #05485A;
@@ -70,14 +71,18 @@ iframe {
   text-align: center;
   position: relative;
 }
+.link .block img {
+  height: 100%;
+}
 .link .txt {
-  font-size: 1.9rem;
+  font-size: 2rem;
   position: absolute;
   z-index: 9999;
   top: 50%;
   left: 0;
   right: 0;
   margin-top: -9px;
+  cursor: pointer;
 }
 /************************ START ABOUT STYLING ************************/
 .logo {
@@ -180,6 +185,9 @@ iframe {
   .hero-about .about-border h1 {
     padding-left: 2%;
   }
+  .link .block {
+    width: 50%;
+  }
   .footer-color-block .footer-padding {
     padding-top: 6%;
   }
@@ -225,6 +233,9 @@ iframe {
   .flex1,
   .flex2 {
     align-items: center;
+  }
+  .hero-home h1 {
+    font-size: 6rem;
   }
 }
 /********************* START 1400PX MEDIA QUERY **************************/
