@@ -101,9 +101,9 @@ img, iframe {
 
 /************************ START ABOUT STYLING ************************/
 
-// nav {
-//     position: relative;
-// }
+nav {
+  position: relative;
+ }
 
 .body-about {
     position: relative;
@@ -111,7 +111,7 @@ img, iframe {
 
 .navbar-custom {
     background-color: @dark-blue !important;
-    margin-top: -5%;
+    height: 100px;
 }
 
 .logo {
@@ -120,12 +120,14 @@ img, iframe {
 
 .logo-center {
     text-align: center;
-    position: relative;
+    position: absolute;
+    /*margin-left: -125px !important; 
+    left: 50%;*/
+    z-index: 10;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    z-index: 10;
 }
 
 .hero-about {
@@ -254,13 +256,13 @@ img, iframe {
 }
 
 
-/********************* START 750PX MEDIA QUERY **************************/
+/********************* START 750PX MEDIA QUERY **************************
 @media (min-width: 750px ){
     .navbar-custom {
         margin-top: -3%;
     } 
 }
-
+*/
 
 /********************* START 850PX MEDIA QUERY **************************/
 @media (min-width: 850px) {
