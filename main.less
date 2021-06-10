@@ -101,34 +101,31 @@ img, iframe {
 
 /************************ START ABOUT STYLING ************************/
 
-nav {
-  position: relative;
- }
-
-.body-about {
-    position: relative;
-}
-
 .navbar-custom {
     background-color: @dark-blue !important;
-    height: 100px;
+}
+
+.navbar-brand {
+    position: absolute;
+    top: -5px;
+    width: 96vw;
+}
+
+.navbar-nav {
+    padding-top: 5px;
+}
+
+.navbar-toggler {
+    margin-top: 100px;
+    margin-bottom: 3px;
 }
 
 .logo {
     max-width: 200px;
+    display: block;
+    margin: auto;
 }
 
-.logo-center {
-    text-align: center;
-    position: absolute;
-    /*margin-left: -125px !important; 
-    left: 50%;*/
-    z-index: 10;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-}
 
 .hero-about {
     background-image: url(images/bg-1.jpg);
@@ -256,13 +253,13 @@ nav {
 }
 
 
-/********************* START 750PX MEDIA QUERY **************************
-@media (min-width: 750px ){
-    .navbar-custom {
-        margin-top: -3%;
-    } 
+/********************* START 767PX MEDIA QUERY **************************/
+@media (min-width: 767px ) {
+    .navbar-nav {
+        padding-top: 100px;
+    }
 }
-*/
+
 
 /********************* START 850PX MEDIA QUERY **************************/
 @media (min-width: 850px) {
@@ -320,10 +317,6 @@ nav {
 
 
 @media (min-width: 1200px ) {
-    .navbar-custom {
-        margin-top: -2%;
-    } 
-
     .hero-about .about-border {
          min-height: 60vh;
     }
