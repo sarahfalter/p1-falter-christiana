@@ -8,6 +8,14 @@ img,
 iframe {
   width: 100%;
 }
+h1,
+h2,
+h3 {
+  font-family: 'acumin-pro-condensed', sans-serif;
+}
+p {
+  font-family: 'lato', sans-serif;
+}
 /************************ START HOME STYLING ************************/
 .body-home {
   color: #05485A;
@@ -116,9 +124,8 @@ iframe {
   padding-left: 12%;
   min-height: 30vh;
 }
-.hero-about h1 {
+.hero-about .hero-title {
   color: #05485A;
-  font-family: 'acumin-pro-condensed', sans-serif;
   border-left: solid 5px #D7745B;
   padding-left: 3%;
 }
@@ -128,18 +135,15 @@ iframe {
 .about-content h2 {
   text-align: center;
   padding-bottom: 3%;
-  font-family: 'acumin-pro-condensed', sans-serif;
   color: #05485A;
 }
 .about-content h3 {
   padding-bottom: 3%;
   text-align: center;
-  font-family: 'acumin-pro-condensed', sans-serif;
   color: #05485A;
 }
 .about-content p {
   padding-bottom: 3%;
-  font-family: 'lato', sans-serif;
   color: #05485A;
 }
 .footer-color-block {
@@ -148,7 +152,6 @@ iframe {
   color: #ffffff;
 }
 .footer-color-block h3 {
-  font-family: 'acumin-pro-condensed', sans-serif;
   text-align: center;
   padding-bottom: 2%;
 }
@@ -171,7 +174,6 @@ iframe {
 }
 .footer-content ul,
 .footer-content p {
-  font-family: 'lato', sans-serif;
   text-align: center;
   color: #05485A;
 }
@@ -190,6 +192,25 @@ iframe {
   color: #05485A;
   text-decoration: none;
   padding-right: 1%;
+}
+/**********************START BEERS STYLING********************************/
+.beer-page .hero-beers {
+  background-image: url(images/bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.beer-page .hero-beers .title-border {
+  padding-top: 14%;
+  padding-left: 12%;
+  min-height: 30vh;
+}
+.beer-page .hero-beers .hero-title {
+  color: #05485A;
+  border-left: solid 5px #D7745B;
+  padding-left: 3%;
+}
+.main-brews {
+  padding: 2%;
 }
 /********************* START 650PX MEDIA QUERY **************************/
 @media (min-width: 650px) {
@@ -263,5 +284,14 @@ iframe {
 @media (min-width: 1500px) {
   .hero-about .about-border {
     min-height: 70vh;
+  }
+}
+@media (max-width: 750px) {
+  .main-brews {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .card.mb-3 {
+    width: 50%;
   }
 }
