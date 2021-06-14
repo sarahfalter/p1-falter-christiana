@@ -230,9 +230,20 @@ p {
 }
 .beer-content {
   text-align: center;
+  padding-top: 4%;
+}
+.beer-content ul {
+  margin-bottom: 75px;
+}
+.beer-content ul li {
+  margin: 4% 0;
+}
+.beer-content ul a {
+  color: #D7745B;
+  border-bottom: 1px solid #D7745B;
 }
 .beer-content .beer-intro {
-  width: 50%;
+  width: 80%;
   padding: 2% 0;
   margin: auto;
 }
@@ -241,6 +252,12 @@ p {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+}
+.main-brews .col-md-4 img {
+  padding: 8% 0;
+}
+.main-brews .row {
+  padding: 7%;
 }
 .main-brews .card-text {
   text-align: left;
@@ -252,6 +269,30 @@ p {
   width: 100%;
   border-bottom: 1px solid #D7745B;
   margin: 5% 0;
+}
+.tap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.tap .contain-tap {
+  padding: 4% 0;
+}
+.tap .contain-tap ul li {
+  list-style-type: none;
+  line-height: 2.5;
+  font-size: 0.8rem;
+}
+/********************* START 550PX MEDIA QUERY **************************/
+@media (min-width: 550px) {
+  .beer-page .hero-beers .title-border {
+    padding-top: 5%;
+  }
+  .main-brews .card.mb-3 {
+    width: 47%;
+    margin: 1%;
+  }
 }
 /********************* START 650PX MEDIA QUERY **************************/
 @media (min-width: 650px) {
@@ -266,6 +307,14 @@ p {
   }
   .footer-color-block .footer-padding {
     padding-top: 6%;
+  }
+}
+@media (min-width: 750px) {
+  .main-brews .col-md-4 img {
+    padding: 16% 0;
+  }
+  .main-brews .row {
+    padding: 0%;
   }
 }
 /********************* START 767PX MEDIA QUERY **************************/
@@ -292,6 +341,9 @@ p {
     font-size: 50px;
     border-left: solid 8px #D7745B;
   }
+  .beer-content .beer-intro {
+    width: 50%;
+  }
   .flex1,
   .flex2 {
     display: flex;
@@ -307,6 +359,17 @@ p {
   }
   .footer-color-block .footer-padding {
     padding-top: 4%;
+  }
+}
+/********************* START 950PX MEDIA QUERY **************************/
+@media (min-width: 950px) {
+  .tap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .tap .contain-tap {
+    width: 33.33333333%;
   }
 }
 /********************* START 1000PX MEDIA QUERY **************************/
@@ -345,17 +408,19 @@ p {
   }
 }
 /********************* START 1400PX MEDIA QUERY **************************/
-/********************* START 2000PX MEDIA QUERY **************************/
+/********************* START 1500PX MEDIA QUERY **************************/
 @media (min-width: 1500px) {
   .hero-about .about-border {
     min-height: 70vh;
   }
 }
+/********************* START 800PX MAX MEDIA QUERY **************************/
 @media (max-width: 800px) {
   .card.mb-3 {
     width: 48%;
   }
 }
+/********************* START 750PX MAX MEDIA QUERY **************************/
 @media (max-width: 750px) {
   .main-brews {
     display: flex;
@@ -365,13 +430,15 @@ p {
     width: 50%;
   }
 }
+/********************* START 600PX MAX MEDIA QUERY **************************/
 @media (max-width: 600px) {
   .card.mb-3 {
     width: 60%;
   }
 }
+/********************* START 450PX MAX MEDIA QUERY **************************/
 @media (max-width: 450px) {
   .card.mb-3 {
-    width: 75%;
+    width: 85%;
   }
 }
