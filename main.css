@@ -59,14 +59,22 @@ p {
 .hero-home .cta {
   background: #E9B168;
   padding: 1% 4%;
-  border-radius: 10px;
+  border-radius: 30px;
   margin-top: 2%;
+}
+.hero-home .cta:hover {
+  background: #D7745B;
+  transition: 0.7s ease-in-out;
 }
 .mission {
   background: #05485A;
   color: #ffffff;
   text-align: center;
   padding: 10% 5%;
+}
+.mission .p-mission {
+  width: 50%;
+  margin: auto;
 }
 .link {
   display: flex;
@@ -86,11 +94,22 @@ p {
   font-size: 2rem;
   position: absolute;
   z-index: 9999;
-  top: 50%;
+  top: 33%;
   left: 0;
   right: 0;
-  margin-top: -9px;
+  margin: auto;
   cursor: pointer;
+}
+.link .rectangle {
+  border: 1px solid white;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  height: -50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25%;
 }
 /************************ START ABOUT STYLING ************************/
 .navbar-custom {
@@ -235,6 +254,14 @@ p {
 }
 /********************* START 850PX MEDIA QUERY **************************/
 @media (min-width: 850px) {
+  .link .txt:hover {
+    border-top: 2px double white;
+    border-bottom: 2px double white;
+    width: 65%;
+    height: 30%;
+    margin: auto;
+    transition: 0.2s;
+  }
   .hero-about .about-border {
     min-height: 50vh;
   }
@@ -268,6 +295,9 @@ p {
 }
 /********************* START 1200PX MEDIA QUERY **************************/
 @media (min-width: 1200px) {
+  .link .txt {
+    top: 40%;
+  }
   .hero-about .about-border {
     min-height: 60vh;
   }
@@ -277,6 +307,16 @@ p {
   }
   .hero-home h1 {
     font-size: 6rem;
+  }
+}
+@media (min-width: 1300px) {
+  .link .txt:hover {
+    border-top: 2px double white;
+    border-bottom: 2px double white;
+    width: 45%;
+    height: 25%;
+    margin: auto;
+    transition: 0.2s;
   }
 }
 /********************* START 1400PX MEDIA QUERY **************************/
