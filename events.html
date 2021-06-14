@@ -8,7 +8,15 @@
     <title>3 Daughters Brewing</title>
     <meta name="description" content="">
 
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/mwg6wqu.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link type="text/css" rel="stylesheet" href="main.css" />
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/70a4005e9d.js" crossorigin="anonymous"></script>
@@ -18,84 +26,169 @@
 
 <body>
 
-    <a href="index.html"><img src="images/logo.png" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="200" /></a>
+    <!-- <a href="index.html"><img src="images/logo.png" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="200" /></a> -->
 
 
-    <nav>
-        <ul>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="beers.html">BREWS</a></li>
-            <li><a href="events.html">EVENTS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+
+    <nav class="navbar navbar-custom navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="beers.html">BREWS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">EVENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
 
-    <main>
 
-        <h1>OUR EVENTS</h1>
+    <main class="events">
 
-        <figure>
-            <img src="images/events1.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
-        </figure>
+        <div class="hero-events">
+            <div class="title-border">
+                <h1 class="hero-title">OUR <br> EVENTS</h1>
+            </div>
+        </div>
 
-        <figure>
-            <img src="images/events2.png" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
-        </figure>
-
-        <figure>
-            <img src="images/events3.png" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
-        </figure>
-
-        <figure>
-            <img src="images/events4.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
-        </figure>
-
-        <figure>
-            <img src="images/events7.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
-        </figure>
-
-        <figure>
-            <img src="images/events8.png" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
-        </figure>
+        <article class="flex">
+            <section class="events-container">
+                <h2>Tasting Room Events</h2>
+                <a href="https://3dbrewing.com/events/" target="_blank">
+                    <figure>
+                        <img src="images/events1.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
+                        <figcaption>BRUSH, DROP N' DRANK</figcaption>
+                    </figure>
+                </a>
 
 
+
+                <a href="https://3dbrewing.com/events/" target="_blank">
+                    <figure>
+                        <img src="images/events1.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
+                        <figcaption>FOOD TRUCK RALLY</figcaption>
+                    </figure>
+                </a>
+
+                <!-- <img src="images/events2.png" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
+                    <figcaption><a href="https://3dbrewing.com/events/" target="_blank">FOOD TRUCK RALLY</a></figcaption> -->
+
+
+
+                <a href="https://3dbrewing.com/events/" target="_blank">
+                    <figure>
+                        <img src="images/events1.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
+                        <figcaption>SILENT DISCO</figcaption>
+                    </figure>
+                </a>
+
+                <!-- <img src="images/events3.png" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
+                    <figcaption><a href="https://3dbrewing.com/events/" target="_blank">SILENT DISCO</a></figcaption> -->
+
+            </section>
+
+            <div class="events-border"></div>
+
+            <section class="events-container">
+                <h2>Off-Site Events</h2>
+
+                <a href="https://3dbrewing.com/events/" target="_blank">
+                    <figure>
+                        <img src="images/events1.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
+                        <figcaption>BEER TASTING @ ABC</figcaption>
+                    </figure>
+                </a>
+
+
+                <!-- <img src="images/events4.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
+                    <figcaption><a href="https://3dbrewing.com/events/" target="_blank">BEER TASTING @ ABC</a></figcaption> -->
+
+
+
+                <a href="https://3dbrewing.com/events/" target="_blank">
+                    <figure>
+                        <img src="images/events1.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
+                        <figcaption>BEER TASTING @ TOTAL WINE</figcaption>
+                    </figure>
+                </a>
+
+
+                <!-- <img src="images/events7.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
+                    <figcaption><a href="https://3dbrewing.com/events/" target="_blank">BEER TASTING @ TOTAL WINE</a></figcaption> -->
+
+
+
+                <a href="https://3dbrewing.com/events/" target="_blank">
+                    <figure>
+                        <img src="images/events1.jpg" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
+                        <figcaption>THE PUB TRIVIA</figcaption>
+                    </figure>
+                </a>
+
+
+                <!-- <img src="images/events8.png" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="400" />
+                    <figcaption><a href="https://3dbrewing.com/events/" target="_blank">THE PUB TRIVIA</a></figcaption> -->
+
+            </section>
+        </article>
 
     </main>
-
     <footer>
 
-        <div>
-            <h3>Hours</h3>
+        <div class="footer-color-block">
+            <h3>HOURS</h3>
             <ul>
                 <li>Monday - Thursday 11:30AM - 10:00PM</li>
                 <li>Friday - Saturday 11:30AM - 12:00AM</li>
                 <li>Sunday 11:30AM - 8:00PM</li>
             </ul>
+
+            <div class="footer-padding">
+                <p><span>PHONE NUMBER:</span> 727-495-6002</p>
+                <p><span>ADDRESS:</span> 222 22nd Street South, St. Petersburg, FL 33712</p>
+            </div>
         </div>
 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14121.28775866159!2d-82.6627778!3d27.7690528!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d9834cf3055fece!2s3%20Daughters%20Brewing!5e0!3m2!1sen!2sus!4v1623001621032!5m2!1sen!2sus" width="600"
+            height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-        <ul>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="beers.html">BREWS</a></li>
-            <li><a href="events.html">EVENTS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
 
-        <div>
-            <a href="https://www.facebook.com/3DaughtersBrewing" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/3daughtersbrewing/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/3DBrewing" target="_blank"><i class="fab fa-twitter"></i></a>
+        <div class="footer-content">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="beers.html">BREWS</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/3DaughtersBrewing" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/3daughtersbrewing/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/3DBrewing" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <div>
+                <p>Designed by GG Creative Co.</p>
+                <p>All Rights Reserved by Three Daughters Brewing</p>
+                <p>Copyright 2021</p>
+            </div>
+
         </div>
-
-        <div>
-            <p>Designed by GG Creative Co.</p>
-            <p>All Rights Reserved by Three Daughters Brewing</p>
-            <p>Copyright 2021</p>
-        </div>
-
 
     </footer>
+
 
 
 </body>

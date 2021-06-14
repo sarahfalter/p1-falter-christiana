@@ -195,6 +195,7 @@ p {
 .footer-content p {
   text-align: center;
   color: #05485A;
+  font-family: 'lato', sans-serif;
 }
 .footer-content ul li,
 .footer-content p li {
@@ -270,6 +271,7 @@ p {
   border-bottom: 1px solid #D7745B;
   margin: 5% 0;
 }
+<<<<<<< HEAD
 .tap {
   display: flex;
   flex-direction: column;
@@ -292,6 +294,83 @@ p {
   .main-brews .card.mb-3 {
     width: 47%;
     margin: 1%;
+=======
+/********************* START EVENTS STYLING *****************************/
+.hero-events {
+  background-image: url(images/bg-3.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid #05485A;
+}
+.hero-events .title-border {
+  padding-top: 14%;
+  padding-left: 12%;
+  min-height: 30vh;
+}
+.hero-events .hero-title {
+  color: #05485A;
+  border-left: solid 5px #D7745B;
+  padding-left: 3%;
+}
+.flex {
+  animation: fadein 2s ease;
+}
+.events .flex {
+  padding: 5%;
+}
+.events figure {
+  padding: 8%;
+}
+.events-container h2 {
+  text-align: center;
+  padding-top: 10%;
+  color: #05485A;
+  font-size: 2rem;
+}
+.events-container a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.events-container a figure {
+  position: relative;
+  transition: 0.5s;
+}
+.events-container a figure figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: #ffffff;
+  font-family: 'lato', sans-serif;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.events-container figure:hover {
+  -moz-box-shadow: 0 15px #05485A;
+  -webkit-box-shadow: 0 0 15px #05485A;
+  box-shadow: 0 0 15px #05485A;
+  transition: 0.3s;
+}
+/********************* START ANIMATION KEYFRAME **********************/
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/********************* START 500PX MEDIA QUERY **************************/
+@media (min-width: 500px) {
+  .events-container h2 {
+    font-size: 3rem;
+  }
+  .events-container a figure figcaption {
+    font-size: 2rem;
+>>>>>>> 3f0a2f90e4ac21415f439750ac34f3c8db7f6b5e
   }
 }
 /********************* START 650PX MEDIA QUERY **************************/
@@ -309,12 +388,29 @@ p {
     padding-top: 6%;
   }
 }
+<<<<<<< HEAD
 @media (min-width: 750px) {
   .main-brews .col-md-4 img {
     padding: 16% 0;
   }
   .main-brews .row {
     padding: 0%;
+=======
+/********************* START 700PX MEDIA QUERY **************************/
+@media (min-width: 700px) {
+  .flex {
+    display: flex;
+  }
+  .events-container h2 {
+    font-size: 2rem;
+    padding-bottom: 3%;
+  }
+  .events-container a figure figcaption {
+    font-size: 1.4rem;
+  }
+  .events-border {
+    border-right: 1px solid #D7745B;
+>>>>>>> 3f0a2f90e4ac21415f439750ac34f3c8db7f6b5e
   }
 }
 /********************* START 767PX MEDIA QUERY **************************/
@@ -376,6 +472,22 @@ p {
 @media (min-width: 1000px) {
   .hero-about .about-border {
     padding-top: 6%;
+  }
+  .flex {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .events-container {
+    margin: 0 auto;
+  }
+  .events-container h2 {
+    font-size: 3rem;
+  }
+  .events-container a figure img {
+    max-width: 550px;
+  }
+  .events-container a figure figcaption {
+    font-size: 2rem;
   }
 }
 /********************* START 1200PX MEDIA QUERY **************************/
