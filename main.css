@@ -358,6 +358,9 @@ p {
   .events-container a figure figcaption {
     font-size: 1.4rem;
   }
+  .events-border {
+    border-right: 1px solid #D7745B;
+  }
 }
 /********************* START 767PX MEDIA QUERY **************************/
 @media (min-width: 767px) {
@@ -406,7 +409,7 @@ p {
     padding-top: 6%;
   }
   .flex {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
   }
   .events-container {
