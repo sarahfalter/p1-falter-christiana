@@ -228,8 +228,30 @@ p {
   border-left: solid 5px #D7745B;
   padding-left: 3%;
 }
+.beer-content {
+  text-align: center;
+}
+.beer-content .beer-intro {
+  width: 50%;
+  padding: 2% 0;
+  margin: auto;
+}
 .main-brews {
   padding: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.main-brews .card-text {
+  text-align: left;
+}
+.main-brews .card-title {
+  text-align: left;
+}
+.main-brews .line {
+  width: 100%;
+  border-bottom: 1px solid #D7745B;
+  margin: 5% 0;
 }
 /********************* START 650PX MEDIA QUERY **************************/
 @media (min-width: 650px) {
@@ -308,6 +330,9 @@ p {
   .hero-home h1 {
     font-size: 6rem;
   }
+  .main-brews .card.mb-3 {
+    width: 50%;
+  }
 }
 @media (min-width: 1300px) {
   .link .txt:hover {
@@ -326,6 +351,11 @@ p {
     min-height: 70vh;
   }
 }
+@media (max-width: 800px) {
+  .card.mb-3 {
+    width: 48%;
+  }
+}
 @media (max-width: 750px) {
   .main-brews {
     display: flex;
@@ -333,5 +363,15 @@ p {
   }
   .card.mb-3 {
     width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .card.mb-3 {
+    width: 60%;
+  }
+}
+@media (max-width: 450px) {
+  .card.mb-3 {
+    width: 75%;
   }
 }
