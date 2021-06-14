@@ -62,8 +62,13 @@ p {
     .cta {
         background: @dark-yellow;
         padding: 1% 4%;
-        border-radius: 10px;
+        border-radius: 30px;
         margin-top: 2%;
+    }
+
+    .cta:hover {
+        background: @peach;
+        transition: .7s ease-in-out;
     }
 }
 
@@ -72,6 +77,11 @@ p {
     color: @white;
     text-align: center;
     padding: 10% 5%;
+
+    .p-mission {
+        width: 50%;
+        margin: auto;
+    }
 }
 
 .link {
@@ -94,13 +104,26 @@ p {
         font-size: 2rem;
         position: absolute;
         z-index: 9999;
-        top: 50%;
+        top: 33%;
         left: 0;
         right: 0;
-        margin-top: -9px;
+        margin: auto;
         cursor: pointer;
 
     }
+    .rectangle {
+        border: 1px solid white;
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        height: -50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 25%;
+    }
+
+    
 }
 
 
@@ -245,8 +268,34 @@ p {
         }
     }
 }
+
+.beer-content {
+    text-align: center;
+    .beer-intro {
+        width: 50%;
+        padding: 2% 0;
+        margin: auto;
+    }
+}
 .main-brews {
     padding: 2%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    .card-text {
+        text-align: left;
+    }
+
+    .card-title {
+        text-align: left;
+    }
+
+    .line {
+        width: 100%;
+        border-bottom: 1px solid @peach;
+        margin: 5% 0;
+    }
 }
 
 /********************* START EVENTS STYLING *****************************/
@@ -399,6 +448,18 @@ p {
 
 /********************* START 850PX MEDIA QUERY **************************/
 @media (min-width: 850px) {
+
+    .link {
+        
+        .txt:hover {
+          border-top: 2px double white;
+          border-bottom: 2px double white;
+          width: 65%;
+          height: 30%;
+          margin: auto;
+          transition: .2s;
+      }
+}
     .hero-about .about-border {
         min-height: 50vh;
     
@@ -477,6 +538,12 @@ p {
 
 
 @media (min-width: 1200px ) {
+    .link {
+    .txt {
+        top: 40%;
+      }
+
+    }
     .hero-about .about-border {
          min-height: 60vh;
     }
@@ -490,6 +557,26 @@ p {
             font-size: 6rem;
         }
     }
+
+    .main-brews {
+        .card.mb-3 {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .link {
+        
+          .txt:hover {
+            border-top: 2px double white;
+            border-bottom: 2px double white;
+            width: 45%;
+            height: 25%;
+            margin: auto;
+            transition: .2s;
+        }
+}
 }
 
 
@@ -516,6 +603,11 @@ p {
     }
 }
 
+@media (max-width: 800px) {
+    .card.mb-3 {
+        width: 48%;
+    }
+}
 
 @media (max-width: 750px) {
     .main-brews {
@@ -525,5 +617,17 @@ p {
 
     .card.mb-3 {
         width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card.mb-3 {
+        width: 60%;
+    }
+}
+
+@media (max-width: 450px) {
+    .card.mb-3 {
+        width: 75%;
     }
 }
