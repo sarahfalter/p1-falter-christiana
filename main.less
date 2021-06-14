@@ -365,7 +365,7 @@ p {
 }
 
 .events figure {
-    padding: 8%;
+    padding: 2%;
 }
 
 
@@ -426,6 +426,20 @@ p {
 
 }
 
+
+/********************* START 500PX MEDIA QUERY **************************/
+@media (min-width: 500px ) {
+    .events-container {
+        h2 {
+            font-size: 3rem;
+        }
+
+        a figure figcaption {
+            font-size: 2rem;
+        }
+    }
+ }
+
 /********************* START 550PX MEDIA QUERY **************************/
 @media (min-width: 550px) {
     .beer-page .hero-beers .title-border {
@@ -475,12 +489,21 @@ p {
         }
     }
 
+    .events-right {
+        padding-right: 8%;
+    }
+    
+    .events-left {
+        padding-left: 8%;
+    }
+
     .events-border {
         border-right: 1px solid @peach;
     }
 }
 
 
+/********************* START 750PX MEDIA QUERY **************************/
 @media (min-width: 750px) {
     .main-brews .col-md-4 img {
         padding: 16% 0;
