@@ -8,6 +8,13 @@
     <title>3 Daughters Brewing</title>
     <meta name="description" content="">
 
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/mwg6wqu.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Main CSS -->
     <link type="text/css" rel="stylesheet" href="main.css" />
 
     <!-- Font Awesome -->
@@ -37,46 +44,37 @@
 
     <main>
 
-        <h1>CONTACT US</h1>
-
-        <section class="contact-form-section">
-            <div class="contact-container">
-
-                <form class="contact-form form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
-                    <div class="first-name input">
-                        <label for="firstname" class="label">First Name:</label>
-                        <input type="text" name="req_firstname" id="firstname" placeholder="ex. John" />
-                    </div>
-
-                    <div class="last-name input">
-                        <label for="lastname" class="label">Last Name:</label>
-                        <input type="text" name="req_lastname" id="lastname" placeholder="ex. Smith" />
-                    </div>
-
-                    <div class="email input">
-                        <label for="email" class="label">Email:</label>
-                        <input type="email" name="req_email" id="email" placeholder="jsmith@gmail.com" />
-                    </div>
-
-                    <div class="comments input">
-                        <label for="comments" class="label">Comments:</label>
-                        <textarea name="req_comments" id="comments" cols="30" rows="10" placeholder="Your Message Goes Here"></textarea>
-                    </div>
-
-                    <div class="submit">
-                        <input type="submit" value="Send" />
-                    </div>
-
-                    <div class="reset">
-                        <input type="reset" value="Refresh" />
-                    </div>
-                </form>
+        <div class="hero-contact">
+            <div class="title-border">
+                <h1 class="hero-title">CONTACT <br> US</h1>
             </div>
+        </div>
+
+
+        <section class="contact-section contact-flex">
+            <form>
+                <div class="form-group col-auto form-width">
+                    <label for="exampleInputName1">Full Name:</label>
+                    <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="John Smith">
+                </div>
+                <div class="form-group col-auto form-width">
+                    <label for="exampleInputEmail1">Email Address:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="jsmith@gmail.com">
+                </div>
+                <div class="form-group col-auto form-width">
+                    <label for="exampleInputTelephone1">Phone Number:</label>
+                    <input type="tel" class="form-control" id="exampleInputTelephone1" placeholder="999-999-9999">
+                </div>
+                <div class="form-group col-auto form-width-text-box">
+                    <label for="exampleFormControlTextarea1">Message:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
 
             <p>WE WOULD LOVE TO HEAR FROM YOU!</p>
         </section>
-
-
 
     </main>
 

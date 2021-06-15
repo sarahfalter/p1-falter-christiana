@@ -40,6 +40,7 @@ p {
 }
 
 
+<<<<<<< HEAD
 /************************** Hamburger menu *********************/
 .hamburger{
     background:none;
@@ -78,6 +79,67 @@ p {
   .menu ul li a:hover {  color: @peach;  text-decoration:none;}
   .menu a{text-decoration:none; color: @white;}
   .menu a:hover{text-decoration:none; color: @white;}
+=======
+
+/*********************** START FOOTER STYLING ***********************/
+
+.footer-color-block {
+    background-color: @dark-blue;
+    padding: 5%;
+    color: @white;
+
+    h3 {
+        text-align: center;
+        padding-bottom: 2%;
+    }
+
+    ul, p {
+        font-family: @font-family-lato; 
+        text-align: center;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    p span {
+        font-weight: bold;
+    }
+
+    .footer-padding {
+        padding-top: 8%;
+    }
+}
+
+.footer-content {
+    padding: 5%;
+
+    ul, p {
+        text-align: center;
+        color: @dark-blue;
+        font-family: @font-family-lato; 
+
+        li {
+            list-style: none;
+            padding-bottom: 1%;
+        }
+    }
+
+    .footer-icons {
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 3%;
+        font-size: 35px;
+    }
+
+    a {
+        color: @dark-blue;
+        text-decoration: none;
+        padding-right: 1%;
+    }
+}
+
+>>>>>>> 5df4fddfae4708c076289f18e1d9128c37e0947d
 
 
 /************************ START HOME STYLING ************************/
@@ -87,15 +149,10 @@ p {
     font-family: lato, sans-serif;
     min-height: 100vh;
     width: 100%;
-
-
-    // .header-home {
-    //     background: #b3b3b3;
-    //     height: 50px;
-    // }
+    
 
     h1, h2, h3, h4 {
-        font-family: acumin-pro-extra-condensed, sans-serif;
+        font-family: @font-family-acumin-pro-condensed;
         letter-spacing: 2px;
         color: @white;
     }
@@ -107,7 +164,6 @@ p {
         text-transform: uppercase;
         letter-spacing: 1px;
     }
-
 }
 
 .hero-home {
@@ -190,8 +246,6 @@ p {
         right: 0;
         top: 25%;
     }
-
-    
 }
 
 
@@ -200,7 +254,6 @@ p {
     background-image: url(images/bg-1.jpg);
     background-size: cover;
     background-position: center;
-    border-bottom: 2px solid @dark-blue;
 
     .about-border {
         padding-top: 14%;
@@ -212,6 +265,8 @@ p {
         color: @dark-blue;
         border-left: solid 5px @peach;
         padding-left: 3%;
+        font-weight: 500;
+        font-size: 2.5rem;
     }
 }
 
@@ -236,79 +291,21 @@ p {
     }
 }
 
-
-.footer-color-block {
-    background-color: @dark-blue;
-    padding: 5%;
-    color: @white;
-
-    h3 {
-        text-align: center;
-        padding-bottom: 2%;
-    }
-
-    ul, p {
-        font-family: @font-family-lato; 
-        text-align: center;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    p span {
-        font-weight: bold;
-    }
-
-    .footer-padding {
-        padding-top: 8%;
-    }
-}
-
-.footer-content {
-    padding: 5%;
-
-    ul, p {
-        text-align: center;
-        color: @dark-blue;
-        font-family: @font-family-lato; 
-
-        li {
-            list-style: none;
-            padding-bottom: 1%;
-        }
-    }
-
-    .footer-icons {
-        text-align: center;
-        padding-top: 2%;
-        padding-bottom: 3%;
-        font-size: 35px;
-    }
-
-    a {
-        color: @dark-blue;
-        text-decoration: none;
-        padding-right: 1%;
-    }
-}
-
 /**********************START BEERS STYLING********************************/
 
-.beer-page {
-    .hero-beers {
-        background-image: url(images/bg-2.jpg);
-        background-size: cover;
-        background-position: center;
+.hero-beers {
+    background-image: url(images/bg-2.jpg);
+    background-size: cover;
+    background-position: center;
         
-        .title-border {
-            .hero-about.about-border();
-        }
-        .hero-title {
-            .hero-about.hero-title();
-        }
+    .title-border {
+        .hero-about.about-border();
+    }
+    .hero-title {
+        .hero-about.hero-title();
     }
 }
+
 
 .beer-content {
     text-align: center;
@@ -386,7 +383,6 @@ p {
     background-image: url(images/bg-3.jpg);
     background-size: cover;
     background-position: center;
-    border-bottom: 2px solid @dark-blue;
 
     .title-border {
         .hero-about .about-border();
@@ -467,12 +463,75 @@ p {
 }
 
  /********************* START CONTACT STYLING ***************************/
-
-
-
  
+.hero-contact {
+    background-image: url(images/bg-4.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .title-border {
+        .hero-about .about-border();
+    }
+
+    .hero-title {
+       .hero-about .hero-title();
+    }
+}
+
+form {
+    margin: 0 auto;
+    margin-top: 6%;
+    margin-bottom: 7%;
+
+    .form-width {
+        width: 60%;
+    }
+
+    label {
+        color: @dark-blue !important;
+        font-family: @font-family-lato !important;
+    }
+
+    input, textarea {
+        background-color: @peach !important;
+        font-family: @font-family-lato !important;
+        color: @white !important;
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: @white !important;
+    }
+
+    button {
+        margin-left: 4%;
+        background-color: @dark-blue !important;
+        transition: .5s !important;
+    }
+}
+
+form button:hover {
+    background-color: @peach !important;
+    color: @white !important;
+    transition: .3s !important;
+}
+
+.contact-section p {
+    text-align: center;
+    padding-bottom: 2%;
+    color: @dark-blue;
+    font-family: @font-family-acumin-pro-condensed;
+    font-size: 2rem;
+    padding: 2%;
+}
 
 
+
+/********************* START 450PX MEDIA QUERY **************************/
+@media (min-width: 450px ) {
+   form {
+    width: 80%;
+   }
+}
 
 
 /********************* START 500PX MEDIA QUERY **************************/
@@ -490,13 +549,17 @@ p {
 
 /********************* START 550PX MEDIA QUERY **************************/
 @media (min-width: 550px) {
-    .beer-page .hero-beers .title-border {
-        padding-top: 5%;
-}
-.main-brews .card.mb-3 {
-    width: 47%;
-    margin: 1%;
-}
+//     .beer-page .hero-beers .title-border {
+//         padding-top: 5%;
+// }
+    .main-brews .card.mb-3 {
+        width: 47%;
+        margin: 1%;
+    }
+
+    form {
+        width: 70%;
+       }
 
 }
 /********************* START 650PX MEDIA QUERY **************************/
@@ -505,7 +568,10 @@ p {
         padding-right: 28%;
     }
 
-    .hero-about .about-border {
+    .hero-about .about-border, 
+    .hero-beers .title-border,
+    .hero-events .title-border,
+    .hero-contact .title-border {
         padding-top: 8%;
 
         h1 {
@@ -513,11 +579,12 @@ p {
         }
     }
 
+
     .link {
         .block {
             width: 50%;
         }
-       }
+    }
 
     .footer-color-block .footer-padding {
         padding-top: 6%;
@@ -554,6 +621,7 @@ p {
     }
 
 
+<<<<<<< HEAD
 .desktop-menu {
     display: block;
         margin-bottom: 1rem;
@@ -585,6 +653,27 @@ p {
 
 }
 
+=======
+    .contact-flex {
+        display: flex;
+        align-items: center;
+
+        form {
+            width: 50%;
+            margin-left: 10%;
+
+            .form-width-text-box {
+                width: 85%;
+            }
+        }
+
+        p {
+            flex: 1;
+            font-size: 2.5rem;
+            margin-right: 9%;
+        }
+    }
+>>>>>>> 5df4fddfae4708c076289f18e1d9128c37e0947d
 }
 
 
@@ -595,13 +684,6 @@ p {
     }
     .main-brews .row {
         padding: 0%;
-    }
-}
-
-/********************* START 767PX MEDIA QUERY **************************/
-@media (min-width: 767px ) {
-    .navbar-nav {
-        padding-top: 100px;
     }
 }
 
@@ -620,7 +702,10 @@ p {
           transition: .2s;
       }
 }
-    .hero-about .about-border {
+    .hero-about .about-border,
+    .hero-beers .title-border,
+    .hero-events .title-border,
+    .hero-contact .title-border {
         min-height: 50vh;
     
         h1 {
@@ -629,6 +714,7 @@ p {
         border-left: solid 8px @peach;
         }
     }
+
 
     .beer-content .beer-intro {
         width: 50%;
@@ -674,7 +760,6 @@ p {
 
 }
 
-
 /********************* START 1000PX MEDIA QUERY **************************/
 @media (min-width: 1000px) {
     nav {
@@ -683,7 +768,10 @@ p {
         margin-bottom: 1rem;
     }
 
-    .hero-about .about-border {
+    .hero-about .about-border,
+    .hero-beers .title-border,
+    .hero-events .title-border,
+    .hero-contact .title-border {
         padding-top: 6%;
     }
 
@@ -710,25 +798,33 @@ p {
         }
         
     }
+
+    .contact-section {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        p {
+            flex: 1;
+            font-size: 3rem;
+            margin-right: 9%;
+        }
+    }
 }
 
 
 /********************* START 1200PX MEDIA QUERY **************************/
-// @media (min-width: 1200px ) {
-//     .image-flex {
-//         width: 600px;
-//     }
-// }
-
 
 @media (min-width: 1200px ) {
     .link {
     .txt {
         top: 40%;
       }
-
     }
-    .hero-about .about-border {
+
+    .hero-about .about-border,
+    .hero-beers .title-border,
+    .hero-events .title-border,
+    .hero-contact .title-border {
          min-height: 60vh;
     }
     
@@ -749,6 +845,7 @@ p {
     }
 }
 
+/********************* START 1300PX MEDIA QUERY **************************/
 @media (min-width: 1300px) {
     .link {
         
@@ -763,14 +860,6 @@ p {
 }
 }
 
-
-
-/********************* START 1400PX MEDIA QUERY **************************/
-// @media (min-width: 1400px ) {
-//     .about-content {
-//         padding-top: 16%;
-//     }
-// }
 
 /********************* START 1500PX MEDIA QUERY **************************/
 
