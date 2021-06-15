@@ -31,3 +31,4 @@ swapPhoto2();
 
 //This makes the swap happen if the user manually resizes the browser after load
 window.addEventListener("resize", swapPhoto2, false);
+
