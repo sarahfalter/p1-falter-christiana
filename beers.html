@@ -25,6 +25,7 @@
     <!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body class="beer-page">
@@ -34,8 +35,8 @@
             <a href="index.html"><img class="logo" src="images/logo.png" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="200" /></a>
         </div>
 
-
-        <nav>
+       <!--Desktop Menu-->
+        <nav class="desktop-menu">
             <ul class="nav-flex">
                 <li><a href="about.html">ABOUT</a></li>
                 <li class="nav-beers"><a href="beers.html">BREWS</a></li>
@@ -43,6 +44,20 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
+
+        <!--Mobile Menu-->
+      
+			<button class="hamburger">&#9776;</button>
+			<button class="cross">&#735;</button>
+
+			<nav class="menu">
+				<ul>
+					<li><a href="about.html">ABOUT</a></li>
+                    <li class="nav-beers"><a href="beers.html">BREWS</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
     </header>
 
 
@@ -466,6 +481,7 @@
 
 
 
+	<script src="js/Hamburger.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

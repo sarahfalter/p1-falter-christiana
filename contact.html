@@ -20,7 +20,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/70a4005e9d.js" crossorigin="anonymous"></script>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -30,8 +30,8 @@
             <a href="index.html"><img class="logo" src="images/logo.png" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" width="200" /></a>
         </div>
 
-
-        <nav>
+       <!--Desktop Menu-->
+        <nav class="desktop-menu">
             <ul class="nav-flex">
                 <li><a href="about.html">ABOUT</a></li>
                 <li class="nav-beers"><a href="beers.html">BREWS</a></li>
@@ -39,6 +39,21 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
+
+        <!--Mobile Menu-->
+      
+			<button class="hamburger">&#9776;</button>
+			<button class="cross">&#735;</button>
+
+			<nav class="menu">
+				<ul>
+					<li><a href="about.html">ABOUT</a></li>
+                    <li class="nav-beers"><a href="beers.html">BREWS</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+    
     </header>
 
 
@@ -121,7 +136,7 @@
         </div>
 
     </footer>
-
+	<script src="js/Hamburger.js"></script>
 </body>
 
 </html>
