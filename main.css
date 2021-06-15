@@ -109,55 +109,6 @@ p {
   text-decoration: none;
   color: #ffffff;
 }
-/*********************** START FOOTER STYLING ***********************/
-.footer-color-block {
-  background-color: #05485A;
-  padding: 5%;
-  color: #ffffff;
-}
-.footer-color-block h3 {
-  text-align: center;
-  padding-bottom: 2%;
-}
-.footer-color-block ul,
-.footer-color-block p {
-  font-family: 'lato', sans-serif;
-  text-align: center;
-}
-.footer-color-block li {
-  list-style: none;
-}
-.footer-color-block p span {
-  font-weight: bold;
-}
-.footer-color-block .footer-padding {
-  padding-top: 8%;
-}
-.footer-content {
-  padding: 5%;
-}
-.footer-content ul,
-.footer-content p {
-  text-align: center;
-  color: #05485A;
-  font-family: 'lato', sans-serif;
-}
-.footer-content ul li,
-.footer-content p li {
-  list-style: none;
-  padding-bottom: 1%;
-}
-.footer-content .footer-icons {
-  text-align: center;
-  padding-top: 2%;
-  padding-bottom: 3%;
-  font-size: 35px;
-}
-.footer-content a {
-  color: #05485A;
-  text-decoration: none;
-  padding-right: 1%;
-}
 /************************ START HOME STYLING ************************/
 .body-home {
   color: #05485A;
@@ -558,9 +509,11 @@ form button:hover {
   .events-border {
     border-right: 1px solid #D7745B;
   }
-<<<<<<< HEAD
+  .nav-flex,
   .desktop-menu {
     display: block;
+  }
+  .desktop-menu {
     margin-bottom: 1rem;
   }
   .desktop-menu .nav-flex {
@@ -582,23 +535,6 @@ form button:hover {
   .hamburger,
   .cross {
     display: none;
-=======
-  .contact-flex {
-    display: flex;
-    align-items: center;
-  }
-  .contact-flex form {
-    width: 50%;
-    margin-left: 10%;
-  }
-  .contact-flex form .form-width-text-box {
-    width: 85%;
-  }
-  .contact-flex p {
-    flex: 1;
-    font-size: 2.5rem;
-    margin-right: 9%;
->>>>>>> 5df4fddfae4708c076289f18e1d9128c37e0947d
   }
 }
 /********************* START 750PX MEDIA QUERY **************************/
