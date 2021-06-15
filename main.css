@@ -44,6 +44,55 @@ nav .nav-flex a {
   text-decoration: none;
   color: #05485A;
 }
+/*********************** START FOOTER STYLING ***********************/
+.footer-color-block {
+  background-color: #05485A;
+  padding: 5%;
+  color: #ffffff;
+}
+.footer-color-block h3 {
+  text-align: center;
+  padding-bottom: 2%;
+}
+.footer-color-block ul,
+.footer-color-block p {
+  font-family: 'lato', sans-serif;
+  text-align: center;
+}
+.footer-color-block li {
+  list-style: none;
+}
+.footer-color-block p span {
+  font-weight: bold;
+}
+.footer-color-block .footer-padding {
+  padding-top: 8%;
+}
+.footer-content {
+  padding: 5%;
+}
+.footer-content ul,
+.footer-content p {
+  text-align: center;
+  color: #05485A;
+  font-family: 'lato', sans-serif;
+}
+.footer-content ul li,
+.footer-content p li {
+  list-style: none;
+  padding-bottom: 1%;
+}
+.footer-content .footer-icons {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  font-size: 35px;
+}
+.footer-content a {
+  color: #05485A;
+  text-decoration: none;
+  padding-right: 1%;
+}
 /************************ START HOME STYLING ************************/
 .body-home {
   color: #05485A;
@@ -55,7 +104,7 @@ nav .nav-flex a {
 .body-home h2,
 .body-home h3,
 .body-home h4 {
-  font-family: acumin-pro-extra-condensed, sans-serif;
+  font-family: 'acumin-pro-condensed', sans-serif;
   letter-spacing: 2px;
   color: #ffffff;
 }
@@ -140,7 +189,6 @@ nav .nav-flex a {
   background-image: url(images/bg-1.jpg);
   background-size: cover;
   background-position: center;
-  border-bottom: 2px solid #05485A;
 }
 .hero-about .about-border {
   padding-top: 14%;
@@ -151,6 +199,8 @@ nav .nav-flex a {
   color: #05485A;
   border-left: solid 5px #D7745B;
   padding-left: 3%;
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 .about-content {
   padding: 5%;
@@ -169,69 +219,23 @@ nav .nav-flex a {
   padding-bottom: 3%;
   color: #05485A;
 }
-.footer-color-block {
-  background-color: #05485A;
-  padding: 5%;
-  color: #ffffff;
-}
-.footer-color-block h3 {
-  text-align: center;
-  padding-bottom: 2%;
-}
-.footer-color-block ul,
-.footer-color-block p {
-  font-family: 'lato', sans-serif;
-  text-align: center;
-}
-.footer-color-block li {
-  list-style: none;
-}
-.footer-color-block p span {
-  font-weight: bold;
-}
-.footer-color-block .footer-padding {
-  padding-top: 8%;
-}
-.footer-content {
-  padding: 5%;
-}
-.footer-content ul,
-.footer-content p {
-  text-align: center;
-  color: #05485A;
-  font-family: 'lato', sans-serif;
-}
-.footer-content ul li,
-.footer-content p li {
-  list-style: none;
-  padding-bottom: 1%;
-}
-.footer-content .footer-icons {
-  text-align: center;
-  padding-top: 2%;
-  padding-bottom: 3%;
-  font-size: 35px;
-}
-.footer-content a {
-  color: #05485A;
-  text-decoration: none;
-  padding-right: 1%;
-}
 /**********************START BEERS STYLING********************************/
-.beer-page .hero-beers {
+.hero-beers {
   background-image: url(images/bg-2.jpg);
   background-size: cover;
   background-position: center;
 }
-.beer-page .hero-beers .title-border {
+.hero-beers .title-border {
   padding-top: 14%;
   padding-left: 12%;
   min-height: 30vh;
 }
-.beer-page .hero-beers .hero-title {
+.hero-beers .hero-title {
   color: #05485A;
   border-left: solid 5px #D7745B;
   padding-left: 3%;
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 .beer-content {
   text-align: center;
@@ -294,7 +298,6 @@ nav .nav-flex a {
   background-image: url(images/bg-3.jpg);
   background-size: cover;
   background-position: center;
-  border-bottom: 2px solid #05485A;
 }
 .hero-events .title-border {
   padding-top: 14%;
@@ -305,6 +308,8 @@ nav .nav-flex a {
   color: #05485A;
   border-left: solid 5px #D7745B;
   padding-left: 3%;
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 .flex {
   animation: fadein 2s ease;
@@ -358,6 +363,69 @@ nav .nav-flex a {
   }
 }
 /********************* START CONTACT STYLING ***************************/
+.hero-contact {
+  background-image: url(images/bg-4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.hero-contact .title-border {
+  padding-top: 14%;
+  padding-left: 12%;
+  min-height: 30vh;
+}
+.hero-contact .hero-title {
+  color: #05485A;
+  border-left: solid 5px #D7745B;
+  padding-left: 3%;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+form {
+  margin: 0 auto;
+  margin-top: 6%;
+  margin-bottom: 7%;
+}
+form .form-width {
+  width: 60%;
+}
+form label {
+  color: #05485A !important;
+  font-family: 'lato', sans-serif !important;
+}
+form input,
+form textarea {
+  background-color: #D7745B !important;
+  font-family: 'lato', sans-serif !important;
+  color: #ffffff !important;
+}
+form input::placeholder,
+form textarea::placeholder {
+  color: #ffffff !important;
+}
+form button {
+  margin-left: 4%;
+  background-color: #05485A !important;
+  transition: 0.5s !important;
+}
+form button:hover {
+  background-color: #D7745B !important;
+  color: #ffffff !important;
+  transition: 0.3s !important;
+}
+.contact-section p {
+  text-align: center;
+  padding-bottom: 2%;
+  color: #05485A;
+  font-family: 'acumin-pro-condensed', sans-serif;
+  font-size: 2rem;
+  padding: 2%;
+}
+/********************* START 450PX MEDIA QUERY **************************/
+@media (min-width: 450px) {
+  form {
+    width: 80%;
+  }
+}
 /********************* START 500PX MEDIA QUERY **************************/
 @media (min-width: 500px) {
   .events-container h2 {
@@ -369,12 +437,12 @@ nav .nav-flex a {
 }
 /********************* START 550PX MEDIA QUERY **************************/
 @media (min-width: 550px) {
-  .beer-page .hero-beers .title-border {
-    padding-top: 5%;
-  }
   .main-brews .card.mb-3 {
     width: 47%;
     margin: 1%;
+  }
+  form {
+    width: 70%;
   }
 }
 /********************* START 650PX MEDIA QUERY **************************/
@@ -382,10 +450,16 @@ nav .nav-flex a {
   .nav-flex .nav-beers {
     padding-right: 28%;
   }
-  .hero-about .about-border {
+  .hero-about .about-border,
+  .hero-beers .title-border,
+  .hero-events .title-border,
+  .hero-contact .title-border {
     padding-top: 8%;
   }
-  .hero-about .about-border h1 {
+  .hero-about .about-border h1,
+  .hero-beers .title-border h1,
+  .hero-events .title-border h1,
+  .hero-contact .title-border h1 {
     padding-left: 2%;
   }
   .link .block {
@@ -416,6 +490,22 @@ nav .nav-flex a {
   .events-border {
     border-right: 1px solid #D7745B;
   }
+  .contact-flex {
+    display: flex;
+    align-items: center;
+  }
+  .contact-flex form {
+    width: 50%;
+    margin-left: 10%;
+  }
+  .contact-flex form .form-width-text-box {
+    width: 85%;
+  }
+  .contact-flex p {
+    flex: 1;
+    font-size: 2.5rem;
+    margin-right: 9%;
+  }
 }
 /********************* START 750PX MEDIA QUERY **************************/
 @media (min-width: 750px) {
@@ -424,12 +514,6 @@ nav .nav-flex a {
   }
   .main-brews .row {
     padding: 0%;
-  }
-}
-/********************* START 767PX MEDIA QUERY **************************/
-@media (min-width: 767px) {
-  .navbar-nav {
-    padding-top: 100px;
   }
 }
 /********************* START 850PX MEDIA QUERY **************************/
@@ -442,10 +526,16 @@ nav .nav-flex a {
     margin: auto;
     transition: 0.2s;
   }
-  .hero-about .about-border {
+  .hero-about .about-border,
+  .hero-beers .title-border,
+  .hero-events .title-border,
+  .hero-contact .title-border {
     min-height: 50vh;
   }
-  .hero-about .about-border h1 {
+  .hero-about .about-border h1,
+  .hero-beers .title-border h1,
+  .hero-events .title-border h1,
+  .hero-contact .title-border h1 {
     padding-left: 1%;
     font-size: 50px;
     border-left: solid 8px #D7745B;
@@ -488,7 +578,10 @@ nav .nav-flex a {
     margin: 0 auto;
     margin-bottom: 1rem;
   }
-  .hero-about .about-border {
+  .hero-about .about-border,
+  .hero-beers .title-border,
+  .hero-events .title-border,
+  .hero-contact .title-border {
     padding-top: 6%;
   }
   .flex {
@@ -507,13 +600,25 @@ nav .nav-flex a {
   .events-container a figure figcaption {
     font-size: 2rem;
   }
+  .contact-section {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .contact-section p {
+    flex: 1;
+    font-size: 3rem;
+    margin-right: 9%;
+  }
 }
 /********************* START 1200PX MEDIA QUERY **************************/
 @media (min-width: 1200px) {
   .link .txt {
     top: 40%;
   }
-  .hero-about .about-border {
+  .hero-about .about-border,
+  .hero-beers .title-border,
+  .hero-events .title-border,
+  .hero-contact .title-border {
     min-height: 60vh;
   }
   .flex1,
@@ -527,6 +632,7 @@ nav .nav-flex a {
     width: 50%;
   }
 }
+/********************* START 1300PX MEDIA QUERY **************************/
 @media (min-width: 1300px) {
   .link .txt:hover {
     border-top: 2px double white;
@@ -537,7 +643,6 @@ nav .nav-flex a {
     transition: 0.2s;
   }
 }
-/********************* START 1400PX MEDIA QUERY **************************/
 /********************* START 1500PX MEDIA QUERY **************************/
 @media (min-width: 1500px) {
   .hero-about .about-border {
