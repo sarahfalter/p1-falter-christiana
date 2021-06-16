@@ -1,720 +1,864 @@
 @import url('https://use.typekit.net/mwg6wqu.css');
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 img,
 iframe {
-  width: 100%;
+    width: 100%;
 }
+
 h1,
 h2,
 h3 {
-  font-family: 'acumin-pro-condensed', sans-serif;
+    font-family: 'acumin-pro-condensed', sans-serif;
 }
+
 p {
-  font-family: 'lato', sans-serif;
+    font-family: 'lato', sans-serif;
 }
+
+
 /************************ START NAV STYLING ************************/
+
 .logo {
-  max-width: 200px;
-  display: block;
-  margin: auto;
-  position: absolute;
-  top: 8%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    max-width: 200px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 .nav-flex,
 .desktop-menu {
-  display: none;
+    display: none;
 }
+
 .menu,
 .hamburger,
 .cross {
-  display: block;
+    display: block;
 }
+
+
 /************************** Hamburger menu *********************/
+
 .hamburger {
-  background: none;
-  position: absolute;
-  top: 0;
-  line-height: 50px;
-  padding: 1px 10px 2px 15px;
-  color: #ffffff;
-  border: 0;
-  font-size: 1.8em;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  z-index: 10000000000000;
+    background: none;
+    position: absolute;
+    top: 0;
+    line-height: 50px;
+    padding: 1px 10px 2px 15px;
+    color: #ffffff;
+    border: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
 }
+
 .cross {
-  background: none;
-  position: absolute;
-  top: 0;
-  padding: 1px 15px 0px 15px;
-  color: #ffffff;
-  border: 0;
-  font-size: 3.5em;
-  line-height: 65px;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  z-index: 10000000000000;
+    background: none;
+    position: absolute;
+    top: 0;
+    padding: 1px 15px 0px 15px;
+    color: #ffffff;
+    border: 0;
+    font-size: 3.5em;
+    line-height: 65px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
 }
+
 .menu {
-  z-index: 1000000;
-  font-weight: bold;
-  font-size: 0.8em;
-  width: 100%;
-  background: #D7745B;
-  position: absolute;
-  text-align: center;
-  font-size: 1em;
+    z-index: 1000000;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 100%;
+    background: #D7745B;
+    position: absolute;
+    text-align: center;
+    font-size: 1em;
 }
+
 .menu ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  list-style-image: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
 }
+
 .menu li {
-  display: block;
-  padding: 15px 0 15px 0;
-  border-bottom: #ffffff 1px solid;
+    display: block;
+    padding: 15px 0 15px 0;
+    border-bottom: #ffffff 1px solid;
 }
+
 .menu li:hover {
-  display: block;
-  background: #ffffff;
-  padding: 15px 0 15px 0;
-  border-bottom: white 1px solid;
-  transition: 0.2s ease;
+    display: block;
+    background: #ffffff;
+    padding: 15px 0 15px 0;
+    border-bottom: white 1px solid;
+    transition: 0.2s ease;
 }
+
 .menu ul li a {
-  text-decoration: none;
-  margin: 0px;
-  color: #ffffff;
+    text-decoration: none;
+    margin: 0px;
+    color: #ffffff;
 }
+
 .menu ul li a:hover {
-  color: #D7745B;
-  text-decoration: none;
+    color: #D7745B;
+    text-decoration: none;
 }
+
 .menu a {
-  text-decoration: none;
-  color: #ffffff;
+    text-decoration: none;
+    color: #ffffff;
 }
+
 .menu a:hover {
-  text-decoration: none;
-  color: #ffffff;
+    text-decoration: none;
+    color: #ffffff;
 }
+
+
 /************************ START HOME STYLING ************************/
+
 .body-home {
-  color: #05485A;
-  font-family: lato, sans-serif;
-  min-height: 100vh;
-  width: 100%;
+    color: #05485A;
+    font-family: lato, sans-serif;
+    min-height: 100vh;
+    width: 100%;
 }
+
 .body-home h1,
 .body-home h2,
 .body-home h3,
 .body-home h4 {
-  font-family: 'acumin-pro-condensed', sans-serif;
-  letter-spacing: 2px;
-  color: #ffffff;
+    font-family: 'acumin-pro-condensed', sans-serif;
+    letter-spacing: 2px;
+    color: #ffffff;
 }
+
 .body-home .cta,
 .body-home .txt {
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.hero-home {
-  background-image: url(images/home-bg.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-}
-.hero-home h1 {
-  font-size: 3rem;
-  text-align: center;
-}
-.hero-home .cta {
-  animation: fadein 0.6s ease-in-out;
-  animation-delay: 0.2s;
-  animation-fill-mode: both;
-  background: #E9B168;
-  padding: 1% 4%;
-  border-radius: 30px;
-  margin-top: 2%;
-}
-.hero-home .cta:hover {
-  background: #D7745B;
-  transition: 0.7s ease-in-out;
-}
-.mission {
-  background: #05485A;
-  color: #ffffff;
-  text-align: center;
-  padding: 10% 5%;
-}
-.mission .p-mission {
-  width: 50%;
-  margin: auto;
-}
-.link {
-  display: flex;
-  flex-flow: row wrap;
-}
-.link .block {
-  color: #ffffff;
-  width: 100%;
-  background: #ffffff;
-  text-align: center;
-  position: relative;
-}
-.link .block img {
-  height: 100%;
-}
-.link .txt {
-  font-size: 2rem;
-  position: absolute;
-  z-index: 9999;
-  top: 33%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  cursor: pointer;
-}
-.link .rectangle {
-  border: 1px solid white;
-  width: 50%;
-  height: 50%;
-  margin: auto;
-  height: -50%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 25%;
-}
-/************************ START ABOUT STYLING ************************/
-.hero-about {
-  background-image: url(images/bg-1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.hero-about .about-border {
-  padding-top: 14%;
-  padding-left: 12%;
-  min-height: 30vh;
-}
-.hero-about .hero-title {
-  color: #05485A;
-  border-left: solid 5px #D7745B;
-  padding-left: 3%;
-  font-weight: 500;
-  font-size: 2.5rem;
-}
-.about-content {
-  padding: 5%;
-}
-.about-content h2 {
-  text-align: center;
-  padding-bottom: 3%;
-  color: #05485A;
-}
-.about-content h3 {
-  padding-bottom: 3%;
-  text-align: center;
-  color: #05485A;
-}
-.about-content p {
-  padding-bottom: 3%;
-  color: #05485A;
-}
-/**********************START BEERS STYLING********************************/
-.hero-beers {
-  background-image: url(images/bg-2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.hero-beers .title-border {
-  padding-top: 14%;
-  padding-left: 12%;
-  min-height: 30vh;
-}
-.hero-beers .hero-title {
-  color: #05485A;
-  border-left: solid 5px #D7745B;
-  padding-left: 3%;
-  font-weight: 500;
-  font-size: 2.5rem;
-}
-.beer-content {
-  text-align: center;
-  padding-top: 4%;
-}
-.beer-content ul {
-  margin-bottom: 75px;
-}
-.beer-content ul li {
-  margin: 4% 0;
-}
-.beer-content ul a {
-  color: #D7745B;
-  border-bottom: 1px solid #D7745B;
-}
-.beer-content .beer-intro {
-  width: 80%;
-  padding: 2% 0;
-  margin: auto;
-}
-.main-brews {
-  padding: 2%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
-.main-brews .col-md-4 img {
-  padding: 8% 0;
-}
-.main-brews .row {
-  padding: 7%;
-}
-.main-brews .card-text {
-  text-align: left;
-}
-.main-brews .card-title {
-  text-align: left;
-}
-.main-brews .line {
-  width: 100%;
-  border-bottom: 1px solid #D7745B;
-  margin: 5% 0;
-}
-.tap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-.tap .contain-tap {
-  padding: 4% 0;
-}
-.tap .contain-tap ul li {
-  list-style-type: none;
-  line-height: 2.5;
-  font-size: 0.8rem;
-}
-/********************* START EVENTS STYLING *****************************/
-.hero-events {
-  background-image: url(images/bg-3.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.hero-events .title-border {
-  padding-top: 14%;
-  padding-left: 12%;
-  min-height: 30vh;
-}
-.hero-events .hero-title {
-  color: #05485A;
-  border-left: solid 5px #D7745B;
-  padding-left: 3%;
-  font-weight: 500;
-  font-size: 2.5rem;
-}
-.flex {
-  animation: fadein 2s ease;
-}
-.events .flex {
-  padding: 5%;
-}
-.events figure {
-  padding: 2%;
-}
-.events-container h2 {
-  text-align: center;
-  padding-top: 10%;
-  color: #05485A;
-  font-size: 2rem;
-}
-.events-container a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.events-container a figure {
-  position: relative;
-  transition: 0.5s;
-}
-.events-container a figure figcaption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  color: #ffffff;
-  font-family: 'lato', sans-serif;
-  text-align: center;
-  font-size: 1.4rem;
-}
-.events-container figure:hover {
-  -moz-box-shadow: 0 15px #05485A;
-  -webkit-box-shadow: 0 0 15px #05485A;
-  box-shadow: 0 0 15px #05485A;
-  transition: 0.3s;
-}
-/********************* START ANIMATION KEYFRAME **********************/
-@keyframes fadein {
-  0% {
-    opacity: 0;
-    transform: scale(0.1);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-/********************* START CONTACT STYLING ***************************/
-.hero-contact {
-  background-image: url(images/bg-4.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.hero-contact .title-border {
-  padding-top: 14%;
-  padding-left: 12%;
-  min-height: 30vh;
-}
-.hero-contact .hero-title {
-  color: #05485A;
-  border-left: solid 5px #D7745B;
-  padding-left: 3%;
-  font-weight: 500;
-  font-size: 2.5rem;
-}
-form {
-  margin: 0 auto;
-  margin-top: 6%;
-  margin-bottom: 7%;
-}
-form .form-width {
-  width: 60%;
-}
-form label {
-  color: #05485A !important;
-  font-family: 'lato', sans-serif !important;
-}
-form input,
-form textarea {
-  background-color: #D7745B !important;
-  font-family: 'lato', sans-serif !important;
-  color: #ffffff !important;
-}
-form input::placeholder,
-form textarea::placeholder {
-  color: #ffffff !important;
-}
-form button {
-  margin-left: 4%;
-  background-color: #05485A !important;
-  transition: 0.5s !important;
-}
-form button:hover {
-  background-color: #D7745B !important;
-  color: #ffffff !important;
-  transition: 0.3s !important;
-}
-.contact-section p {
-  text-align: center;
-  padding-bottom: 2%;
-  color: #05485A;
-  font-family: 'acumin-pro-condensed', sans-serif;
-  font-size: 2rem;
-  padding: 2%;
-}
-/********************* START 450PX MEDIA QUERY **************************/
-@media (min-width: 450px) {
-  form {
-    width: 80%;
-  }
-}
-/********************* START 500PX MEDIA QUERY **************************/
-@media (min-width: 500px) {
-  .events-container h2 {
-    font-size: 3rem;
-  }
-  .events-container a figure figcaption {
-    font-size: 2rem;
-  }
-}
-/********************* START 550PX MEDIA QUERY **************************/
-@media (min-width: 550px) {
-  .main-brews .card.mb-3 {
-    width: 47%;
-    margin: 1%;
-  }
-  form {
-    width: 70%;
-  }
-}
-/********************* START 650PX MEDIA QUERY **************************/
-@media (min-width: 650px) {
-  .nav-flex .nav-beers {
-    padding-right: 28%;
-  }
-  .hero-about .about-border,
-  .hero-beers .title-border,
-  .hero-events .title-border,
-  .hero-contact .title-border {
-    padding-top: 8%;
-  }
-  .hero-about .about-border h1,
-  .hero-beers .title-border h1,
-  .hero-events .title-border h1,
-  .hero-contact .title-border h1 {
-    padding-left: 2%;
-  }
-  .link .block {
-    width: 50%;
-  }
-  .footer-color-block .footer-padding {
-    padding-top: 6%;
-  }
-}
-/********************* START 700PX MEDIA QUERY **************************/
-@media (min-width: 700px) {
-  .flex {
-    display: flex;
-  }
-  .events-container h2 {
-    font-size: 2rem;
-    padding-bottom: 3%;
-  }
-  .events-container a figure figcaption {
-    font-size: 1.4rem;
-  }
-  .events-right {
-    padding-right: 8%;
-  }
-  .events-left {
-    padding-left: 8%;
-  }
-  .events-border {
-    border-right: 1px solid #D7745B;
-  }
-  .nav-flex,
-  .desktop-menu {
-    display: block;
-  }
-  .desktop-menu {
-    margin-bottom: 1rem;
-  }
-  .desktop-menu .nav-flex {
-    display: flex;
-    padding-left: 2%;
-    padding-top: 2%;
-    list-style-type: none;
-    justify-content: space-evenly;
-  }
-  .desktop-menu .nav-flex li {
-    font-family: 'lato', sans-serif;
-    font-weight: 600;
-  }
-  .desktop-menu .nav-flex a {
+    color: #ffffff;
     text-decoration: none;
-    color: #05485A;
-  }
-  .menu,
-  .hamburger,
-  .cross {
-    display: none;
-  }
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
-/********************* START 750PX MEDIA QUERY **************************/
-@media (min-width: 750px) {
-  .main-brews .col-md-4 img {
-    padding: 16% 0;
-  }
-  .main-brews .row {
-    padding: 0%;
-  }
-}
-/********************* START 850PX MEDIA QUERY **************************/
-@media (min-width: 850px) {
-  .link .txt:hover {
-    border-top: 2px double white;
-    border-bottom: 2px double white;
-    width: 65%;
-    height: 30%;
-    margin: auto;
-    transition: 0.2s;
-  }
-  .hero-about .about-border,
-  .hero-beers .title-border,
-  .hero-events .title-border,
-  .hero-contact .title-border {
-    min-height: 50vh;
-  }
-  .hero-about .about-border h1,
-  .hero-beers .title-border h1,
-  .hero-events .title-border h1,
-  .hero-contact .title-border h1 {
-    padding-left: 1%;
-    font-size: 50px;
-    border-left: solid 8px #D7745B;
-  }
-  .beer-content .beer-intro {
-    width: 50%;
-  }
-  .flex1,
-  .flex2 {
+
+.hero-home {
+    background-image: url(../images/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
     display: flex;
-  }
-  .image-flex {
-    width: 50%;
-  }
-  .flex2 {
-    flex-direction: row-reverse;
-  }
-  .footer-color-block h3 {
-    padding-bottom: 1%;
-  }
-  .footer-color-block .footer-padding {
-    padding-top: 4%;
-  }
-}
-/********************* START 950PX MEDIA QUERY **************************/
-@media (min-width: 950px) {
-  .tap {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .tap .contain-tap {
-    width: 33.33333333%;
-  }
-}
-/********************* START 1000PX MEDIA QUERY **************************/
-@media (min-width: 1000px) {
-  nav {
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-  }
-  .hero-about .about-border,
-  .hero-beers .title-border,
-  .hero-events .title-border,
-  .hero-contact .title-border {
-    padding-top: 6%;
-  }
-  .flex {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .events-container {
-    margin: 0 auto;
-  }
-  .events-container h2 {
-    font-size: 3rem;
-  }
-  .events-container a figure img {
-    max-width: 550px;
-  }
-  .events-container a figure figcaption {
-    font-size: 2rem;
-  }
-  .contact-section {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  .contact-section p {
-    flex: 1;
-    font-size: 3rem;
-    margin-right: 9%;
-  }
-}
-/********************* START 1200PX MEDIA QUERY **************************/
-@media (min-width: 1200px) {
-  .link .txt {
-    top: 40%;
-  }
-  .hero-about .about-border,
-  .hero-beers .title-border,
-  .hero-events .title-border,
-  .hero-contact .title-border {
-    min-height: 60vh;
-  }
-  .flex1,
-  .flex2 {
+    justify-content: center;
     align-items: center;
-  }
-  .hero-home h1 {
-    font-size: 6rem;
-  }
-  .main-brews .card.mb-3 {
+    flex-flow: column wrap;
+}
+
+.hero-home h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.hero-home .cta {
+    animation: fadein 0.6s ease-in-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+    background: #E9B168;
+    padding: 1% 4%;
+    border-radius: 30px;
+    margin-top: 2%;
+}
+
+.hero-home .cta:hover {
+    background: #D7745B;
+    transition: 0.7s ease-in-out;
+}
+
+.mission {
+    background: #05485A;
+    color: #ffffff;
+    text-align: center;
+    padding: 10% 5%;
+}
+
+.mission .p-mission {
     width: 50%;
-  }
-}
-/********************* START 1300PX MEDIA QUERY **************************/
-@media (min-width: 1300px) {
-  .link .txt:hover {
-    border-top: 2px double white;
-    border-bottom: 2px double white;
-    width: 45%;
-    height: 25%;
     margin: auto;
-    transition: 0.2s;
-  }
 }
-/********************* START 1500PX MEDIA QUERY **************************/
-@media (min-width: 1500px) {
-  .hero-about .about-border {
-    min-height: 70vh;
-  }
-}
-/********************* START 800PX MAX MEDIA QUERY **************************/
-@media (max-width: 800px) {
-  .card.mb-3 {
-    width: 48%;
-  }
-}
-/********************* START 750PX MAX MEDIA QUERY **************************/
-@media (max-width: 750px) {
-  .main-brews {
+
+.link {
     display: flex;
     flex-flow: row wrap;
-  }
-  .card.mb-3 {
+}
+
+.link .block {
+    color: #ffffff;
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+.link .block img {
+    height: 100%;
+}
+
+.link .txt {
+    font-size: 2rem;
+    position: absolute;
+    z-index: 9999;
+    top: 33%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.link .rectangle {
+    border: 1px solid white;
     width: 50%;
-  }
+    height: 50%;
+    margin: auto;
+    height: -50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
 }
-/********************* START 600PX MAX MEDIA QUERY **************************/
-@media (max-width: 600px) {
-  .card.mb-3 {
-    width: 60%;
-  }
+
+
+/************************ START ABOUT STYLING ************************/
+
+.hero-about {
+    background-image: url(../images/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
 }
-/********************* START 450PX MAX MEDIA QUERY **************************/
-@media (max-width: 450px) {
-  .card.mb-3 {
-    width: 85%;
-  }
+
+.hero-about .about-border {
+    padding-top: 14%;
+    padding-left: 12%;
+    min-height: 30vh;
 }
-/**********************ANIMATIONS********************************************/
+
+.hero-about .hero-title {
+    color: #05485A;
+    border-left: solid 5px #D7745B;
+    padding-left: 3%;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.about-content {
+    padding: 5%;
+}
+
+.about-content h2 {
+    text-align: center;
+    padding-bottom: 3%;
+    color: #05485A;
+}
+
+.about-content h3 {
+    padding-bottom: 3%;
+    text-align: center;
+    color: #05485A;
+}
+
+.about-content p {
+    padding-bottom: 3%;
+    color: #05485A;
+}
+
+
+/**********************START BEERS STYLING********************************/
+
+.hero-beers {
+    background-image: url(../images/bg-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-beers .title-border {
+    padding-top: 14%;
+    padding-left: 12%;
+    min-height: 30vh;
+}
+
+.hero-beers .hero-title {
+    color: #05485A;
+    border-left: solid 5px #D7745B;
+    padding-left: 3%;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.beer-content {
+    text-align: center;
+    padding-top: 4%;
+}
+
+.beer-content ul {
+    margin-bottom: 75px;
+}
+
+.beer-content ul li {
+    margin: 4% 0;
+}
+
+.beer-content ul a {
+    color: #D7745B;
+    border-bottom: 1px solid #D7745B;
+}
+
+.beer-content .beer-intro {
+    width: 80%;
+    padding: 2% 0;
+    margin: auto;
+}
+
+.main-brews {
+    padding: 2%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.main-brews .col-md-4 img {
+    padding: 8% 0;
+}
+
+.main-brews .row {
+    padding: 7%;
+}
+
+.main-brews .card-text {
+    text-align: left;
+}
+
+.main-brews .card-title {
+    text-align: left;
+}
+
+.main-brews .line {
+    width: 100%;
+    border-bottom: 1px solid #D7745B;
+    margin: 5% 0;
+}
+
+.tap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.tap .contain-tap {
+    padding: 4% 0;
+}
+
+.tap .contain-tap ul li {
+    list-style-type: none;
+    line-height: 2.5;
+    font-size: 0.8rem;
+}
+
+
+/********************* START EVENTS STYLING *****************************/
+
+.hero-events {
+    background-image: url(../images/bg-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-events .title-border {
+    padding-top: 14%;
+    padding-left: 12%;
+    min-height: 30vh;
+}
+
+.hero-events .hero-title {
+    color: #05485A;
+    border-left: solid 5px #D7745B;
+    padding-left: 3%;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.flex {
+    animation: fadein 2s ease;
+}
+
+.events .flex {
+    padding: 5%;
+}
+
+.events figure {
+    padding: 2%;
+}
+
+.events-container h2 {
+    text-align: center;
+    padding-top: 10%;
+    color: #05485A;
+    font-size: 2rem;
+}
+
+.events-container a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.events-container a figure {
+    position: relative;
+    transition: 0.5s;
+}
+
+.events-container a figure figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: #ffffff;
+    font-family: 'lato', sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.events-container figure:hover {
+    -moz-box-shadow: 0 15px #05485A;
+    -webkit-box-shadow: 0 0 15px #05485A;
+    box-shadow: 0 0 15px #05485A;
+    transition: 0.3s;
+}
+
+
+/********************* START ANIMATION KEYFRAME **********************/
+
 @keyframes fadein {
-  0% {
-    opacity: 0;
-    transform: scale(0.1);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/********************* START CONTACT STYLING ***************************/
+
+.hero-contact {
+    background-image: url(../images/bg-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-contact .title-border {
+    padding-top: 14%;
+    padding-left: 12%;
+    min-height: 30vh;
+}
+
+.hero-contact .hero-title {
+    color: #05485A;
+    border-left: solid 5px #D7745B;
+    padding-left: 3%;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+form {
+    margin: 0 auto;
+    margin-top: 6%;
+    margin-bottom: 7%;
+}
+
+form .form-width {
+    width: 60%;
+}
+
+form label {
+    color: #05485A !important;
+    font-family: 'lato', sans-serif !important;
+}
+
+form input,
+form textarea {
+    background-color: #D7745B !important;
+    font-family: 'lato', sans-serif !important;
+    color: #ffffff !important;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #ffffff !important;
+}
+
+form button {
+    margin-left: 4%;
+    background-color: #05485A !important;
+    transition: 0.5s !important;
+}
+
+form button:hover {
+    background-color: #D7745B !important;
+    color: #ffffff !important;
+    transition: 0.3s !important;
+}
+
+.contact-section p {
+    text-align: center;
+    padding-bottom: 2%;
+    color: #05485A;
+    font-family: 'acumin-pro-condensed', sans-serif;
+    font-size: 2rem;
+    padding: 2%;
+}
+
+
+/********************* START 450PX MEDIA QUERY **************************/
+
+@media (min-width: 450px) {
+    form {
+        width: 80%;
+    }
+}
+
+
+/********************* START 500PX MEDIA QUERY **************************/
+
+@media (min-width: 500px) {
+    .events-container h2 {
+        font-size: 3rem;
+    }
+    .events-container a figure figcaption {
+        font-size: 2rem;
+    }
+}
+
+
+/********************* START 550PX MEDIA QUERY **************************/
+
+@media (min-width: 550px) {
+    .main-brews .card.mb-3 {
+        width: 47%;
+        margin: 1%;
+    }
+    form {
+        width: 70%;
+    }
+}
+
+
+/********************* START 650PX MEDIA QUERY **************************/
+
+@media (min-width: 650px) {
+    .nav-flex .nav-beers {
+        padding-right: 28%;
+    }
+    .hero-about .about-border,
+    .hero-beers .title-border,
+    .hero-events .title-border,
+    .hero-contact .title-border {
+        padding-top: 8%;
+    }
+    .hero-about .about-border h1,
+    .hero-beers .title-border h1,
+    .hero-events .title-border h1,
+    .hero-contact .title-border h1 {
+        padding-left: 2%;
+    }
+    .link .block {
+        width: 50%;
+    }
+    .footer-color-block .footer-padding {
+        padding-top: 6%;
+    }
+}
+
+
+/********************* START 700PX MEDIA QUERY **************************/
+
+@media (min-width: 700px) {
+    .flex {
+        display: flex;
+    }
+    .events-container h2 {
+        font-size: 2rem;
+        padding-bottom: 3%;
+    }
+    .events-container a figure figcaption {
+        font-size: 1.4rem;
+    }
+    .events-right {
+        padding-right: 8%;
+    }
+    .events-left {
+        padding-left: 8%;
+    }
+    .events-border {
+        border-right: 1px solid #D7745B;
+    }
+    .nav-flex,
+    .desktop-menu {
+        display: block;
+    }
+    .desktop-menu {
+        margin-bottom: 1rem;
+    }
+    .desktop-menu .nav-flex {
+        display: flex;
+        padding-left: 2%;
+        padding-top: 2%;
+        list-style-type: none;
+        justify-content: space-evenly;
+    }
+    .desktop-menu .nav-flex li {
+        font-family: 'lato', sans-serif;
+        font-weight: 600;
+    }
+    .desktop-menu .nav-flex a {
+        text-decoration: none;
+        color: #05485A;
+    }
+    .menu,
+    .hamburger,
+    .cross {
+        display: none;
+    }
+}
+
+
+/********************* START 750PX MEDIA QUERY **************************/
+
+@media (min-width: 750px) {
+    .main-brews .col-md-4 img {
+        padding: 16% 0;
+    }
+    .main-brews .row {
+        padding: 0%;
+    }
+}
+
+
+/********************* START 850PX MEDIA QUERY **************************/
+
+@media (min-width: 850px) {
+    .link .txt:hover {
+        border-top: 2px double white;
+        border-bottom: 2px double white;
+        width: 65%;
+        height: 30%;
+        margin: auto;
+        transition: 0.2s;
+    }
+    .hero-about .about-border,
+    .hero-beers .title-border,
+    .hero-events .title-border,
+    .hero-contact .title-border {
+        min-height: 50vh;
+    }
+    .hero-about .about-border h1,
+    .hero-beers .title-border h1,
+    .hero-events .title-border h1,
+    .hero-contact .title-border h1 {
+        padding-left: 1%;
+        font-size: 50px;
+        border-left: solid 8px #D7745B;
+    }
+    .beer-content .beer-intro {
+        width: 50%;
+    }
+    .flex1,
+    .flex2 {
+        display: flex;
+    }
+    .image-flex {
+        width: 50%;
+    }
+    .flex2 {
+        flex-direction: row-reverse;
+    }
+    .footer-color-block h3 {
+        padding-bottom: 1%;
+    }
+    .footer-color-block .footer-padding {
+        padding-top: 4%;
+    }
+}
+
+
+/********************* START 950PX MEDIA QUERY **************************/
+
+@media (min-width: 950px) {
+    .tap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .tap .contain-tap {
+        width: 33.33333333%;
+    }
+}
+
+
+/********************* START 1000PX MEDIA QUERY **************************/
+
+@media (min-width: 1000px) {
+    nav {
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    .hero-about .about-border,
+    .hero-beers .title-border,
+    .hero-events .title-border,
+    .hero-contact .title-border {
+        padding-top: 6%;
+    }
+    .flex {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .events-container {
+        margin: 0 auto;
+    }
+    .events-container h2 {
+        font-size: 3rem;
+    }
+    .events-container a figure img {
+        max-width: 550px;
+    }
+    .events-container a figure figcaption {
+        font-size: 2rem;
+    }
+    .contact-section {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .contact-section p {
+        flex: 1;
+        font-size: 3rem;
+        margin-right: 9%;
+    }
+}
+
+
+/********************* START 1200PX MEDIA QUERY **************************/
+
+@media (min-width: 1200px) {
+    .link .txt {
+        top: 40%;
+    }
+    .hero-about .about-border,
+    .hero-beers .title-border,
+    .hero-events .title-border,
+    .hero-contact .title-border {
+        min-height: 60vh;
+    }
+    .flex1,
+    .flex2 {
+        align-items: center;
+    }
+    .hero-home h1 {
+        font-size: 6rem;
+    }
+    .main-brews .card.mb-3 {
+        width: 50%;
+    }
+}
+
+
+/********************* START 1300PX MEDIA QUERY **************************/
+
+@media (min-width: 1300px) {
+    .link .txt:hover {
+        border-top: 2px double white;
+        border-bottom: 2px double white;
+        width: 45%;
+        height: 25%;
+        margin: auto;
+        transition: 0.2s;
+    }
+}
+
+
+/********************* START 1500PX MEDIA QUERY **************************/
+
+@media (min-width: 1500px) {
+    .hero-about .about-border {
+        min-height: 70vh;
+    }
+}
+
+
+/********************* START 800PX MAX MEDIA QUERY **************************/
+
+@media (max-width: 800px) {
+    .card.mb-3 {
+        width: 48%;
+    }
+}
+
+
+/********************* START 750PX MAX MEDIA QUERY **************************/
+
+@media (max-width: 750px) {
+    .main-brews {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .card.mb-3 {
+        width: 50%;
+    }
+}
+
+
+/********************* START 600PX MAX MEDIA QUERY **************************/
+
+@media (max-width: 600px) {
+    .card.mb-3 {
+        width: 60%;
+    }
+}
+
+
+/********************* START 450PX MAX MEDIA QUERY **************************/
+
+@media (max-width: 450px) {
+    .card.mb-3 {
+        width: 85%;
+    }
+}
+
+
+/**********************ANIMATIONS********************************************/
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
