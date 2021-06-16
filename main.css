@@ -145,7 +145,7 @@ p {
 .footer-content ul li,
 .footer-content p li {
   list-style: none;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
 }
 .footer-content .footer-icons {
   text-align: center;
@@ -157,6 +157,10 @@ p {
   color: #05485A;
   text-decoration: none;
   padding-right: 1%;
+}
+.footer-content a:hover {
+  border-bottom: 2px solid #D7745B;
+  transition: 0.1s;
 }
 /************************ START HOME STYLING ************************/
 .body-home {
@@ -287,6 +291,9 @@ p {
   color: #05485A;
 }
 /**********************START BEERS STYLING********************************/
+.beer-page footer {
+  margin-top: 4%;
+}
 .hero-beers {
   background-image: url(images/bg-2.jpg);
   background-size: cover;
@@ -340,6 +347,9 @@ p {
 }
 .main-brews .card-title {
   text-align: left;
+}
+.main-brews .back-style {
+  width: 100%;
 }
 .main-brews .line {
   width: 100%;
@@ -511,6 +521,10 @@ form button:hover {
   form {
     width: 70%;
   }
+  .beer-content .inline li {
+    margin: 4% 19px;
+    display: inline;
+  }
 }
 /********************* START 650PX MEDIA QUERY **************************/
 @media (min-width: 650px) {
@@ -579,6 +593,10 @@ form button:hover {
     text-decoration: none;
     color: #05485A;
   }
+  .desktop-menu .nav-flex a:hover {
+    border-bottom: 2px solid #D7745B;
+    transition: 0.1s;
+  }
   .menu,
   .hamburger,
   .cross {
@@ -608,6 +626,13 @@ form button:hover {
   }
   .main-brews .row {
     padding: 0%;
+  }
+  .beer-content ul a:hover {
+    color: #E9B168;
+    border-bottom: 1px solid #E9B168;
+    padding-bottom: 2px;
+    transition: 0.1s ease;
+    text-decoration: none;
   }
 }
 /********************* START 850PX MEDIA QUERY **************************/
