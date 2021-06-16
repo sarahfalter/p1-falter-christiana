@@ -79,6 +79,64 @@ p {
   .menu a{text-decoration:none; color: @white;}
   .menu a:hover{text-decoration:none; color: @white;}
 
+/*********************** START FOOTER STYLING ***********************/
+
+.footer-color-block {
+    background-color: @dark-blue;
+    padding: 5%;
+    color: @white;
+
+    h3 {
+        text-align: center;
+        padding-bottom: 2%;
+    }
+
+    ul, p {
+        font-family: @font-family-lato; 
+        text-align: center;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    p span {
+        font-weight: bold;
+    }
+
+    .footer-padding {
+        padding-top: 8%;
+    }
+}
+
+.footer-content {
+    padding: 5%;
+
+    ul, p {
+        text-align: center;
+        color: @dark-blue;
+        font-family: @font-family-lato; 
+
+        li {
+            list-style: none;
+            padding-bottom: 1%;
+        }
+    }
+
+    .footer-icons {
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 3%;
+        font-size: 35px;
+    }
+
+    a {
+        color: @dark-blue;
+        text-decoration: none;
+        padding-right: 1%;
+    }
+}
+
 
 /************************ START HOME STYLING ************************/
 
@@ -105,7 +163,7 @@ p {
 }
 
 .hero-home {
-    background-image: url(../images/home-bg.jpg);
+    background-image: url(images/home-bg.jpg);
     background-size: cover;
     background-position: center;
     min-height: 90vh;
@@ -562,7 +620,7 @@ form button:hover {
         display: block;
     }
 
-.desktop-menu {
+    .desktop-menu {
         margin-bottom: 1rem;
     
         .nav-flex {
@@ -585,12 +643,32 @@ form button:hover {
         }
     }
 
-.menu,
-.hamburger,
-.cross {
-    display: none;
+    .menu,
+    .hamburger,
+    .cross {
+        display: none;
 
-}
+    }
+
+    .contact-flex {
+        display: flex;
+        align-items: center;
+
+        form {
+            width: 50%;
+            margin-left: 10%;
+
+            .form-width-text-box {
+                width: 85%;
+            }
+        }
+
+        p {
+            flex: 1;
+            font-size: 2.5rem;
+            margin-right: 9%;
+        }
+    }
 
 }
 
