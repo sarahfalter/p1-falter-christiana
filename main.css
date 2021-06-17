@@ -26,6 +26,9 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+nav {
+  font-family: 'lato', sans-serif;
+}
 .nav-flex,
 .desktop-menu {
   display: none;
