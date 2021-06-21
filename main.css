@@ -482,12 +482,12 @@ form input::placeholder,
 form textarea::placeholder {
   color: #ffffff !important;
 }
-form button {
+form .button {
   margin-left: 4%;
   background-color: #05485A !important;
   transition: 0.5s !important;
 }
-form button:hover {
+form .button:hover {
   background-color: #D7745B !important;
   color: #ffffff !important;
   transition: 0.3s !important;
