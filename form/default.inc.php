@@ -1,3 +1,6 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex" />
+ 
  <!-- Adobe Fonts -->
  <link rel="stylesheet" href="https://use.typekit.net/mwg6wqu.css">
 
@@ -8,12 +11,20 @@
 <link rel="icon" type="image/png" href="images/favicon.png" />
 <link rel="icon" type="image/ico" href="images/favicon.ico" />
 
+<!-- jQuery Library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <style type="text/css">
 
 * {
   border: 0;
   padding: 0;
   margin: 0;
+}
+
+img,
+iframe {
+  width: 100%;
 }
 
 h1,
@@ -34,6 +45,9 @@ p {
   top: 8%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+nav {
+  font-family: 'lato', sans-serif;
 }
 .nav-flex,
 .desktop-menu {
@@ -168,17 +182,94 @@ p {
   padding-right: 1%;
 }
 
+/************************* START STICKY FOOTER ***************************/
+
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-content {
+    flex: 1;
+}
+
+
 /*********************** START PAGE STYLING ***********************/
 
-main h2,
+main h1,
 main p {
   color: #05485A;
+}
+
+.info {
+  text-align: center;
+  padding: 15% 0;
+}
+
+.hero-form {
+    background-image: url(images/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+
+
+/********************* START 650PX MEDIA QUERY **************************/
+@media (min-width: 650px) {
+  .nav-flex .nav-beers {
+    padding-right: 28%;
+  }
+}
+
+/********************* START 700PX MEDIA QUERY **************************/
+@media (min-width: 700px ) {
+    .nav-flex,
+  .desktop-menu {
+    display: block;
+  }
+  .desktop-menu {
+    margin-bottom: 1rem;
+  }
+  .desktop-menu .nav-flex {
+    display: flex;
+    padding-left: 2%;
+    padding-top: 2%;
+    list-style-type: none;
+    justify-content: space-evenly;
+  }
+  .desktop-menu .nav-flex li {
+    font-family: 'lato', sans-serif;
+    font-weight: 600;
+  }
+  .desktop-menu .nav-flex a {
+    text-decoration: none;
+    color: #05485A;
+  }
+  .desktop-menu .nav-flex a:hover {
+    border-bottom: 2px solid #D7745B;
+    transition: 0.1s;
+  }
+  .menu,
+  .hamburger,
+  .cross {
+    display: none;
+  }
+}
+
+/********************* START 1000PX MEDIA QUERY **************************/
+@media (min-width: 1000px) {
+  nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
 }
 
 </style>
 
 
-
+<body class="site">
     <header>
         <div class="logo-center">
             <a href="index.html"><img class="logo" src="images/logo.png" title="3 Daughters Brewing Logo" alt="3 Daughters Brewing Logo" /></a>
@@ -209,9 +300,14 @@ main p {
         </nav>
     </header>
 
-    <main>
-      <h2>Oops something went wrong!</h2>
-      <p>Please refresh the page and try again.</p>
+    <main class="site-content">
+
+      <div class="hero-form"></div>
+
+      <div class=info>
+        <h1>Oops something went wrong!</h1>
+       <p>Please refresh the page and try again.</p>
+      </div>
     </main>
 
     <footer>
@@ -257,6 +353,32 @@ main p {
 </div>
 
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+$( document ).ready(function() {
+
+$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+
+});
+
+</script>
+
+</body>
 
 
 
