@@ -265,7 +265,7 @@ nav {
   background-position: center;
 }
 .hero-about .about-border {
-  padding-top: 30%;
+  padding-top: 23%;
   padding-left: 12%;
   min-height: 30vh;
 }
@@ -303,7 +303,7 @@ nav {
   background-position: center;
 }
 .hero-beers .title-border {
-  padding-top: 30%;
+  padding-top: 23%;
   padding-left: 12%;
   min-height: 30vh;
 }
@@ -380,7 +380,7 @@ nav {
   background-position: center;
 }
 .hero-events .title-border {
-  padding-top: 30%;
+  padding-top: 23%;
   padding-left: 12%;
   min-height: 30vh;
 }
@@ -449,7 +449,7 @@ nav {
   background-position: center;
 }
 .hero-contact .title-border {
-  padding-top: 30%;
+  padding-top: 23%;
   padding-left: 12%;
   min-height: 30vh;
 }
@@ -773,7 +773,10 @@ form .button:hover {
 }
 /********************* START 1500PX MEDIA QUERY **************************/
 @media (min-width: 1500px) {
-  .hero-about .about-border {
+  .hero-about .about-border,
+  .hero-beers .title-border,
+  .hero-events .title-border,
+  .hero-contact .title-border {
     min-height: 70vh;
   }
 }
