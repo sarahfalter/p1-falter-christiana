@@ -1,5 +1,5 @@
 # p1-falter-christiana
-Sarah and Christiana collaboratively designed the moodboard, color, palette, wireframes, and web design of the entire site.
+Sarah and Meliisa collaboratively designed the moodboard, color, palette, wireframes, and web design of the entire site.
 
 Sarah developed the homepage and brews page. Sarah also was in charge of editing all digital assets to fit the visual aesthetic of the site and putting together the presentation deck.
 
